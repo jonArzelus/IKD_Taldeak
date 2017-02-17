@@ -14,7 +14,7 @@ public class Alumno {
 		if(this.euskera)
 			return this.nombre+", "+this.centro+", "+"Euskera";
 		else
-			return this.nombre+", "+this.centro+", "+"Gaztelera";
+			return this.nombre+", "+this.centro+", "+"Castellano";
 	}
 	
 	public String getNombre() {

@@ -6,6 +6,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import modelo.Alumno;
 import modelo.Centro;
@@ -142,6 +144,7 @@ public class Cprincipal {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
 	      System.exit(0);
 	    }
+	    Collections.sort(lista, new AlumnoComparator());
 		return lista;
 	}
 
@@ -206,5 +209,12 @@ public class Cprincipal {
 	      System.exit(0);
 	    }
 		return lista;
+	}
+	
+	/**Ordenador de Alumnos*/
+	public static class AlumnoComparator implements Comparator<Alumno> {
+	    public int compare(Alumno a1, Alumno a2) {
+	        return a1.getNombre().compareTo(a2.getNombre());
+	    }
 	}
 }

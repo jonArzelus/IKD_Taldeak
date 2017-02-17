@@ -32,9 +32,9 @@ public class Vprincipal {
 				try {
 					DB = new controlador.Cprincipal("datubasea");
 					//for(int i=0;i<50;i++)
-					Cprincipal.addAlumnos("Jon Arzelus", "Informatika", true);
-					Cprincipal.addAlumnos("Jon Arzeluz", "Informatika", false);
-					Cprincipal.addAlumnos("Jon Arzelux", "Psikologia", false);
+					Cprincipal.addAlumnos("XJon Arzelus", "Informatika", true);
+					Cprincipal.addAlumnos("ZJon Arzeluz", "Informatika", false);
+					Cprincipal.addAlumnos("AJon Arzelux", "Psikologia", false);
 					Cprincipal.addCentros("Informatika");
 					Cprincipal.addCentros("Psikologia");
 					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());

@@ -85,6 +85,7 @@ public class Valumnos {
 				txtcentro.setText(listaAlumnos.get(ind).getCentro());
 				combocentros.setSelectedItem(((Alumno)list.getSelectedValue()).getCentro());
 				chkeuskera.setSelected(listaAlumnos.get(ind).getEuskera());
+				txtpreferencias.setText(listaAlumnos.get(ind).getPreferencias().toString());
 			}
 		});
 		/*list.addMouseListener(new MouseAdapter() {
@@ -141,6 +142,7 @@ public class Valumnos {
 		frmPanelDeAdministracin.getContentPane().add(btnActualizar);
 		
 		txtnombre = new JTextField();
+		txtnombre.setEditable(false);
 		txtnombre.setBounds(327, 31, 309, 20);
 		frmPanelDeAdministracin.getContentPane().add(txtnombre);
 		txtnombre.setColumns(10);
@@ -154,15 +156,18 @@ public class Valumnos {
 		frmPanelDeAdministracin.getContentPane().add(lblCentro);
 		
 		txtcentro = new JTextField();
+		txtcentro.setEditable(false);
 		txtcentro.setColumns(10);
-		txtcentro.setBounds(327, 245, 173, 20);
+		txtcentro.setBounds(327, 72, 173, 20);
 		frmPanelDeAdministracin.getContentPane().add(txtcentro);
 		
 		chkeuskera = new JCheckBox("Euskera");
+		chkeuskera.setEnabled(false);
 		chkeuskera.setBounds(516, 71, 109, 23);
 		frmPanelDeAdministracin.getContentPane().add(chkeuskera);
 		
 		txtpreferencias = new JTextField();
+		txtpreferencias.setEditable(false);
 		txtpreferencias.setColumns(10);
 		txtpreferencias.setBounds(327, 115, 309, 20);
 		frmPanelDeAdministracin.getContentPane().add(txtpreferencias);
@@ -178,8 +183,19 @@ public class Valumnos {
 					chkactualizar.setSelected(false);
 					chkeliminar.setSelected(false);
 					btnAnadir.setEnabled(true);
-				} else
+					combocentros.setVisible(true);
+					txtcentro.setVisible(false);
+					txtnombre.setEditable(true);
+					txtpreferencias.setEditable(true);
+					chkeuskera.setEnabled(true);
+				} else {
 					btnAnadir.setEnabled(false);
+					combocentros.setVisible(false);
+					txtcentro.setVisible(true);
+					txtnombre.setEditable(false);
+					txtpreferencias.setEditable(false);
+					chkeuskera.setEnabled(false);
+				}
 			}
 		});
 		chknuevo.setBounds(426, 176, 109, 23);
@@ -206,16 +222,19 @@ public class Valumnos {
 					chkeliminar.setSelected(false);
 					chknuevo.setSelected(false);
 					btnActualizar.setEnabled(true);
-				} else
+					txtpreferencias.setEditable(true);
+				} else {
 					btnActualizar.setEnabled(false);
+					txtpreferencias.setEditable(false);
+				}
 			}
 		});
 		chkactualizar.setBounds(537, 176, 97, 23);
 		frmPanelDeAdministracin.getContentPane().add(chkactualizar);
 		
 		combocentros = new JComboBox(listaCentros.toArray());
-		combocentros.setEditable(true);
 		combocentros.setBounds(327, 72, 173, 20);
+		combocentros.setVisible(false);
 		frmPanelDeAdministracin.getContentPane().add(combocentros);
 	}
 	
