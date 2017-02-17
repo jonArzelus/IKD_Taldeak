@@ -8,6 +8,7 @@ import javax.swing.UIManager;
 
 import controlador.Cprincipal;
 import modelo.Alumno;
+import modelo.Centro;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -20,6 +21,7 @@ public class Vprincipal {
 	private JFrame frame;
 	private static controlador.Cprincipal DB;
 	public static ArrayList<Alumno> listaAlumnos;
+	public static ArrayList<Centro> listaCentros;
 
 	/**
 	 * Launch the application.
@@ -32,7 +34,10 @@ public class Vprincipal {
 					//for(int i=0;i<50;i++)
 					Cprincipal.addAlumnos("Jon Arzelus", "Informatika", true);
 					Cprincipal.addAlumnos("Jon Arzeluz", "Informatika", false);
-					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos());
+					Cprincipal.addAlumnos("Jon Arzelux", "Psikologia", false);
+					Cprincipal.addCentros("Informatika");
+					Cprincipal.addCentros("Psikologia");
+					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 					//Vprincipal.listaAlumnos = Cprincipal.getAlumnos();
 					//window.frame.setVisible(true);
 				} catch (Exception e) {
@@ -45,8 +50,9 @@ public class Vprincipal {
 	/**
 	 * Create the application.
 	 */
-	public Vprincipal(ArrayList<Alumno> lista) {
+	public Vprincipal(ArrayList<Alumno> lista, ArrayList<Centro> lista1) {
 		listaAlumnos = lista;
+		listaCentros = lista1;
 		initialize();
 		frame.setVisible(true);
 		try {
@@ -73,7 +79,7 @@ public class Vprincipal {
 		JButton btnAlumnos = new JButton("Alumnos");
 		btnAlumnos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Valumnos a =  new Valumnos(listaAlumnos);
+				Valumnos a =  new Valumnos(listaAlumnos,listaCentros);
 				frame.dispose();
 				//a.frame.set
 			}
@@ -82,6 +88,12 @@ public class Vprincipal {
 		frame.getContentPane().add(btnAlumnos);
 		
 		JButton btnCentros = new JButton("Centros");
+		btnCentros.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Vcentros a =  new Vcentros(listaAlumnos,listaCentros);
+				frame.dispose();
+			}
+		});
 		btnCentros.setBounds(20, 216, 137, 23);
 		frame.getContentPane().add(btnCentros);
 		
@@ -118,7 +130,7 @@ public class Vprincipal {
 		lblNalumnos.setBounds(251, 100, 34, 14);
 		frame.getContentPane().add(lblNalumnos);
 		
-		JLabel lblNcentros = new JLabel("");
+		JLabel lblNcentros = new JLabel(Integer.toString(listaCentros.size()));
 		lblNcentros.setBounds(251, 125, 34, 14);
 		frame.getContentPane().add(lblNcentros);
 		

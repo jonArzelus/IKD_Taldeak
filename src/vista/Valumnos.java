@@ -11,6 +11,7 @@ import javax.swing.JScrollPane;
 
 import controlador.Cprincipal;
 import modelo.Alumno;
+import modelo.Centro;
 
 import javax.swing.JList;
 import java.awt.event.ActionListener;
@@ -22,11 +23,15 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
+import javax.swing.JComboBox;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.event.ListSelectionEvent;
 
 public class Valumnos {
 
 	private JFrame frmPanelDeAdministracin;
 	private static ArrayList<Alumno> listaAlumnos;
+	private static ArrayList<Centro> listaCentros;
 	private static DefaultListModel model;
 	private JTextField txtnombre;
 	private JTextField txtcentro;
@@ -35,12 +40,15 @@ public class Valumnos {
 	private JCheckBox chkeliminar;
 	private JCheckBox chkactualizar;
 	private JCheckBox chknuevo;
+	private JComboBox combocentros;
 
 	/**
 	 * Create the application.
+	 * @param listaCentros 
 	 */
-	public Valumnos(ArrayList<Alumno> lista) {
+	public Valumnos(ArrayList<Alumno> lista, ArrayList<Centro> lista1) {
 		listaAlumnos=lista;
+		listaCentros=lista1;
 		initialize();
 		frmPanelDeAdministracin.setVisible(true);
 	}
@@ -58,7 +66,7 @@ public class Valumnos {
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Vprincipal a = new Vprincipal(listaAlumnos);
+				Vprincipal a = new Vprincipal(listaAlumnos,listaCentros);
 				frmPanelDeAdministracin.dispose();
 			}
 		});
@@ -70,15 +78,25 @@ public class Valumnos {
 		frmPanelDeAdministracin.getContentPane().add(scrollPane);
 		
 		JList list = new JList(getModel());
-		list.addMouseListener(new MouseAdapter() {
+		list.addListSelectionListener(new ListSelectionListener() {
+			public void valueChanged(ListSelectionEvent arg0) {
+				int ind = list.getSelectedIndex();
+				txtnombre.setText(listaAlumnos.get(ind).getNombre());
+				txtcentro.setText(listaAlumnos.get(ind).getCentro());
+				combocentros.setSelectedItem(((Alumno)list.getSelectedValue()).getCentro());
+				chkeuskera.setSelected(listaAlumnos.get(ind).getEuskera());
+			}
+		});
+		/*list.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				int ind = list.getSelectedIndex();
 				txtnombre.setText(listaAlumnos.get(ind).getNombre());
 				txtcentro.setText(listaAlumnos.get(ind).getCentro());
+				combocentros.setSelectedItem(((Alumno)list.getSelectedValue()).getCentro());
 				chkeuskera.setSelected(listaAlumnos.get(ind).getEuskera());
 			}
-		});
+		});*/
 		scrollPane.setViewportView(list);
 		
 		JButton btnEliminar = new JButton("Eliminar");
@@ -88,7 +106,7 @@ public class Valumnos {
 				if(!list.isSelectionEmpty()) {
 					Alumno x = (Alumno) list.getSelectedValue();
 					Cprincipal.deleteAlumnos(x.getNombre());
-					listaAlumnos.remove(list.getSelectedIndex());
+					//listaAlumnos.remove(list.getSelectedIndex());
 					actualizar();
 				}
 			}
@@ -97,11 +115,27 @@ public class Valumnos {
 		frmPanelDeAdministracin.getContentPane().add(btnEliminar);
 		
 		JButton btnAnadir = new JButton("A\u00F1adir...");
+		btnAnadir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(txtnombre.getText().length()>0 && txtcentro.getText().length()>0) {
+					Cprincipal.addAlumnos(txtnombre.getText(), txtcentro.getText(), chkeuskera.isSelected());
+					actualizar();
+				}
+			}
+		});
 		btnAnadir.setEnabled(false);
 		btnAnadir.setBounds(426, 146, 89, 23);
 		frmPanelDeAdministracin.getContentPane().add(btnAnadir);
 		
 		JButton btnActualizar = new JButton("Actualizar...");
+		btnActualizar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(txtnombre.getText().length()>0) {
+					Cprincipal.updateAlumnos(txtnombre.getText(), txtpreferencias.getText());
+					actualizar();
+				}
+			}
+		});
 		btnActualizar.setEnabled(false);
 		btnActualizar.setBounds(527, 146, 109, 23);
 		frmPanelDeAdministracin.getContentPane().add(btnActualizar);
@@ -121,7 +155,7 @@ public class Valumnos {
 		
 		txtcentro = new JTextField();
 		txtcentro.setColumns(10);
-		txtcentro.setBounds(327, 72, 173, 20);
+		txtcentro.setBounds(327, 245, 173, 20);
 		frmPanelDeAdministracin.getContentPane().add(txtcentro);
 		
 		chkeuskera = new JCheckBox("Euskera");
@@ -178,6 +212,11 @@ public class Valumnos {
 		});
 		chkactualizar.setBounds(537, 176, 97, 23);
 		frmPanelDeAdministracin.getContentPane().add(chkactualizar);
+		
+		combocentros = new JComboBox(listaCentros.toArray());
+		combocentros.setEditable(true);
+		combocentros.setBounds(327, 72, 173, 20);
+		frmPanelDeAdministracin.getContentPane().add(combocentros);
 	}
 	
 	private static DefaultListModel getModel() {
@@ -189,7 +228,7 @@ public class Valumnos {
 	}
 	
 	private void actualizar() {
-		Valumnos a =  new Valumnos(listaAlumnos);
+		Valumnos a =  new Valumnos(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 		this.frmPanelDeAdministracin.dispose();
 	}
 }

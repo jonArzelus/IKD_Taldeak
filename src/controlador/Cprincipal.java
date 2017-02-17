@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import modelo.Alumno;
+import modelo.Centro;
 
 public class Cprincipal {
 
@@ -50,7 +51,7 @@ public class Cprincipal {
 					+ "NOMBRE TEXT NOT NULL, " + "IDIOMA TEXT NOT NULL," + "INDICE INT NOT NULL" + ");";
 			stmt.executeUpdate(sql);
 			// crea la tabla centros
-			sql = "CREATE TABLE CENTROS(" + "ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," + "NOMBRE TEXT NOT NULL"
+			sql = "CREATE TABLE CENTROS(" + "ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," + "NOMBRE TEXT UNIQUE NOT NULL"
 					+ ");";
 			stmt.executeUpdate(sql);
 			// crea la tabla alumnos
@@ -64,7 +65,7 @@ public class Cprincipal {
 		}
 	}
 
-	public static String getNalumnos() {
+	/*public static String getNalumnos() {
 		Statement stmt = null;
 		ResultSet rs = null;
 		int id = -1;
@@ -79,8 +80,9 @@ public class Cprincipal {
 			//System.exit(0);
 		}
 		return Integer.toString(id);
-	}
+	}*/
 
+	/**Añadir alumnos a la DB*/
 	public static void addAlumnos(String nombre, String centro, boolean euskera) {
 		Statement stmt = null;
 		try {
@@ -95,6 +97,7 @@ public class Cprincipal {
 		}
 	}
 
+	/**Eliminar alumnos de la DB*/
 	public static void deleteAlumnos(String nombre) {
 		Statement stmt = null;
 		try {
@@ -108,6 +111,7 @@ public class Cprincipal {
 		}
 	}
 	
+	/**Actualizad datos de alumnos de la DB*/
 	public static void updateAlumnos(String nombre, String preferencias) {
 	    Statement stmt = null;
 	    try {
@@ -121,6 +125,7 @@ public class Cprincipal {
 	    }
 	}
 
+	/**Conseguir la lista de alumnos de la DB*/
 	public static ArrayList<Alumno> getAlumnos() {
 		ArrayList<Alumno> lista = new ArrayList<Alumno>();
 	    Statement stmt = null;
@@ -128,7 +133,7 @@ public class Cprincipal {
 	      stmt = DBconexion.createStatement();
 	      ResultSet rs = stmt.executeQuery( "SELECT * FROM ALUMNOS;" );
 	      while ( rs.next() ) {
-	    	  System.out.println(rs.getString(4));
+	    	  //System.out.println(rs.getString(4));
 	    	  lista.add(new Alumno(rs.getString(2),rs.getString(3),Boolean.valueOf(rs.getString(4))));
 	      }
 	      rs.close();
@@ -140,4 +145,66 @@ public class Cprincipal {
 		return lista;
 	}
 
+	/**Añadir centros a la DB*/
+	public static void addCentros(String nombre) {
+		Statement stmt = null;
+		try {
+			stmt = DBconexion.createStatement();
+			String sql = "INSERT INTO CENTROS(NOMBRE) " + "VALUES ('" + nombre + "');";
+			stmt.executeUpdate(sql);
+			stmt.close();
+		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
+			//System.exit(0);
+		}
+	}
+
+	/**Eliminar centros de la DB*/
+	public static void deleteCentros(String nombre) {
+		Statement stmt = null;
+		try {
+			stmt = DBconexion.createStatement();
+			String sql = "DELETE from CENTROS where NOMBRE='" + nombre + "';";
+			stmt.executeUpdate(sql);
+			stmt.close();
+		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
+			//System.exit(0);
+		}
+	}
+	
+	/**Actualizar centros de la DB
+	 * @param viejo */
+	public static void updateCentros(String nombre, String viejo) {
+	    Statement stmt = null;
+	    try {
+	      stmt = DBconexion.createStatement();
+	      String sql = "UPDATE CENTROS set NOMBRE='"+nombre+"' where NOMBRE='"+viejo+"';";
+	      stmt.executeUpdate(sql);
+	      stmt.close();
+	    } catch ( Exception e ) {
+	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+	      //System.exit(0);
+	    }
+	}
+
+	/**Conseguir la lista de centros de la DB*/
+	public static ArrayList<Centro> getCentros() {
+		ArrayList<Centro> lista = new ArrayList<Centro>();
+	    Statement stmt = null;
+	    try {
+	      stmt = DBconexion.createStatement();
+	      ResultSet rs = stmt.executeQuery( "SELECT * FROM CENTROS;" );
+	      while ( rs.next() ) {
+	    	  //System.out.println(rs.getString(2));
+	    	  lista.add(new Centro(rs.getString(2)));
+	      }
+	      rs.close();
+	      stmt.close();
+	    } catch ( Exception e ) {
+	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+	      System.exit(0);
+	    }
+		return lista;
+	}
 }

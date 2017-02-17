@@ -14,6 +14,10 @@ public class Centro {
 		nAlumnos=0;
 	}
 	
+	public String toString() {
+		return nombre;
+	}
+	
 	public Alumno[] getAlumnos() {
 		return alumnos;
 	}
