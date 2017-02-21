@@ -9,6 +9,7 @@ import javax.swing.UIManager;
 import controlador.Cprincipal;
 import modelo.Alumno;
 import modelo.Centro;
+import modelo.Mnagusia;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -35,8 +36,6 @@ public class Vprincipal {
 					Cprincipal.addAlumnos("XJon Arzelus", "Informatika", true);
 					Cprincipal.addAlumnos("ZJon Arzeluz", "Informatika", false);
 					Cprincipal.addAlumnos("AJon Arzelux", "Psikologia", false);
-					Cprincipal.addCentros("Informatika");
-					Cprincipal.addCentros("Psikologia");
 					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 					//Vprincipal.listaAlumnos = Cprincipal.getAlumnos();
 					//window.frame.setVisible(true);
@@ -88,6 +87,7 @@ public class Vprincipal {
 		frame.getContentPane().add(btnAlumnos);
 		
 		JButton btnCentros = new JButton("Centros");
+		btnCentros.setEnabled(false);
 		btnCentros.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Vcentros a =  new Vcentros(listaAlumnos,listaCentros);
@@ -137,5 +137,15 @@ public class Vprincipal {
 		JLabel lblNretos = new JLabel("");
 		lblNretos.setBounds(251, 150, 34, 14);
 		frame.getContentPane().add(lblNretos);
+		
+		JButton btnreparto = new JButton("\u00A1Realizar reparto!");
+		btnreparto.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				modelo.Mnagusia reparto = new modelo.Mnagusia();
+				Mnagusia.realizarReparto(listaAlumnos, listaCentros);
+			}
+		});
+		btnreparto.setBounds(295, 100, 188, 50);
+		frame.getContentPane().add(btnreparto);
 	}
 }

@@ -28,12 +28,20 @@ public class Cprincipal {
 				existe = false;
 			}
 			Class.forName("org.sqlite.JDBC");
-			Cprincipal.DBconexion = DriverManager.getConnection("jdbc:sqlite:" + nombre + ".db"); // crea
-																									// la
-																									// base
-																									// de
-																									// datos
+			//crea la base de datos
+			Cprincipal.DBconexion = DriverManager.getConnection("jdbc:sqlite:" + nombre + ".db");
 			DBconexion.setAutoCommit(true);
+			//Añade los centros por defecto - SI SE CAMBIA EL ORDEN CAMBIAR EN Mnagusia TAMBIEN
+			Cprincipal.addCentros("Informatika");
+			Cprincipal.addCentros("Zuzenbidea");
+			Cprincipal.addCentros("Arkitektura");
+			Cprincipal.addCentros("Pedagogia");
+			Cprincipal.addCentros("Politeknika");
+			Cprincipal.addCentros("Erizanitza");
+			Cprincipal.addCentros("Gizarte Hezkuntza");
+			Cprincipal.addCentros("Psikologia");
+			Cprincipal.addCentros("Magisteritza");
+			Cprincipal.addCentros("Enpresa");
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			System.exit(0);
@@ -66,23 +74,6 @@ public class Cprincipal {
 			System.exit(0);
 		}
 	}
-
-	/*public static String getNalumnos() {
-		Statement stmt = null;
-		ResultSet rs = null;
-		int id = -1;
-		try {
-			stmt = DBconexion.createStatement();
-			rs = stmt.executeQuery("SELECT COUNT(*) FROM ALUMNOS;");
-			id = rs.getInt(1);
-			rs.close();
-			stmt.close();
-		} catch (Exception e) {
-			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
-		}
-		return Integer.toString(id);
-	}*/
 
 	/**Añadir alumnos a la DB*/
 	public static void addAlumnos(String nombre, String centro, boolean euskera) {
@@ -131,12 +122,20 @@ public class Cprincipal {
 	public static ArrayList<Alumno> getAlumnos() {
 		ArrayList<Alumno> lista = new ArrayList<Alumno>();
 	    Statement stmt = null;
+	    char[] pref = null;
 	    try {
 	      stmt = DBconexion.createStatement();
 	      ResultSet rs = stmt.executeQuery( "SELECT * FROM ALUMNOS;" );
-	      while ( rs.next() ) {
-	    	  //System.out.println(rs.getString(4));
-	    	  lista.add(new Alumno(rs.getString(2),rs.getString(3),Boolean.valueOf(rs.getString(4))));
+	      while ( rs.next()) {
+	    	  if(!(rs.getString(5)==null)) {
+	    		  System.out.println(rs.getString(5));
+	    		  pref=rs.getString(5).toCharArray();
+	    		  pref.toString();
+	    		  lista.add(new Alumno(rs.getString(2), Character.getNumericValue(pref[0]), Character.getNumericValue(pref[1]), Character.getNumericValue(pref[2]), Character.getNumericValue(pref[3]), Character.getNumericValue(pref[4]), Character.getNumericValue(pref[5]), Character.getNumericValue(pref[6]), Character.getNumericValue(pref[7]), Character.getNumericValue(pref[8]), rs.getString(3), Boolean.valueOf(rs.getString(4))));
+	    	  } else {
+		    	  lista.add(new Alumno(rs.getString(2),rs.getString(3),Boolean.valueOf(rs.getString(4))));	  
+	    	  }
+
 	      }
 	      rs.close();
 	      stmt.close();
@@ -199,7 +198,6 @@ public class Cprincipal {
 	      stmt = DBconexion.createStatement();
 	      ResultSet rs = stmt.executeQuery( "SELECT * FROM CENTROS;" );
 	      while ( rs.next() ) {
-	    	  //System.out.println(rs.getString(2));
 	    	  lista.add(new Centro(rs.getString(2)));
 	      }
 	      rs.close();

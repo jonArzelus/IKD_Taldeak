@@ -85,7 +85,12 @@ public class Valumnos {
 				txtcentro.setText(listaAlumnos.get(ind).getCentro());
 				combocentros.setSelectedItem(((Alumno)list.getSelectedValue()).getCentro());
 				chkeuskera.setSelected(listaAlumnos.get(ind).getEuskera());
-				txtpreferencias.setText(listaAlumnos.get(ind).getPreferencias().toString());
+				String pref = "";
+				for(int i:listaAlumnos.get(ind).getPreferencias()) {
+					pref+=i;
+				}
+				//txtpreferencias.setText(listaAlumnos.get(ind).getPreferencias().toString());
+				txtpreferencias.setText(pref);
 			}
 		});
 		/*list.addMouseListener(new MouseAdapter() {
@@ -118,8 +123,8 @@ public class Valumnos {
 		JButton btnAnadir = new JButton("A\u00F1adir...");
 		btnAnadir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(txtnombre.getText().length()>0 && txtcentro.getText().length()>0) {
-					Cprincipal.addAlumnos(txtnombre.getText(), txtcentro.getText(), chkeuskera.isSelected());
+				if(txtnombre.getText().length()>0 && combocentros.getSelectedIndex()>-1) {
+					Cprincipal.addAlumnos(txtnombre.getText(), combocentros.getSelectedItem().toString(), chkeuskera.isSelected());
 					actualizar();
 				}
 			}
@@ -131,7 +136,7 @@ public class Valumnos {
 		JButton btnActualizar = new JButton("Actualizar...");
 		btnActualizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(txtnombre.getText().length()>0) {
+				if(txtnombre.getText().length()>0 && txtpreferencias.getText().length()==9) {
 					Cprincipal.updateAlumnos(txtnombre.getText(), txtpreferencias.getText());
 					actualizar();
 				}
@@ -186,14 +191,14 @@ public class Valumnos {
 					combocentros.setVisible(true);
 					txtcentro.setVisible(false);
 					txtnombre.setEditable(true);
-					txtpreferencias.setEditable(true);
+					//txtpreferencias.setEditable(true);
 					chkeuskera.setEnabled(true);
 				} else {
 					btnAnadir.setEnabled(false);
 					combocentros.setVisible(false);
 					txtcentro.setVisible(true);
 					txtnombre.setEditable(false);
-					txtpreferencias.setEditable(false);
+					//txtpreferencias.setEditable(false);
 					chkeuskera.setEnabled(false);
 				}
 			}
