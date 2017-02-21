@@ -87,7 +87,6 @@ public class Vprincipal {
 		frame.getContentPane().add(btnAlumnos);
 		
 		JButton btnCentros = new JButton("Centros");
-		btnCentros.setEnabled(false);
 		btnCentros.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Vcentros a =  new Vcentros(listaAlumnos,listaCentros);
