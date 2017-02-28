@@ -14,6 +14,8 @@ import modelo.Mnagusia;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 
@@ -32,10 +34,11 @@ public class Vprincipal {
 			public void run() {
 				try {
 					Cprincipal.comenzarDB("datubasea");
-					for(int i=0;i<50;i++)
-						Cprincipal.addAlumnos("XJon Arzelus"+i+i, "Informatika", true, "Hombre");
+					//for(int i=0;i<50;i++)
+						//Cprincipal.addAlumnos("XJon Arzelus"+i+i, "Informatika", true, "Hombre");
 					//Cprincipal.addAlumnos("ZJon Arzeluz", "Informatika", false, "Hombre");
 					//Cprincipal.addAlumnos("AJon Arzelux", "Psikologia", false, "Hombre");
+					Vprincipal.añadirAlumnosTXT("ikasleak.txt");
 					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 					//Vprincipal.listaAlumnos = Cprincipal.getAlumnos();
 					//window.frame.setVisible(true);
@@ -152,5 +155,18 @@ public class Vprincipal {
 		});
 		btnreparto.setBounds(295, 100, 188, 50);
 		frame.getContentPane().add(btnreparto);
+	}
+	
+	public static void añadirAlumnosTXT(String nombre) {
+		String fila;
+		String[] partes;
+		try (BufferedReader br = new BufferedReader(new FileReader(nombre))) {
+		    while ((fila = br.readLine()) != null) {
+		    	partes=fila.split(",");
+				Cprincipal.addAlumnos(partes[0], partes[2], Boolean.valueOf(partes[3]), partes[1]);
+		    }
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 }

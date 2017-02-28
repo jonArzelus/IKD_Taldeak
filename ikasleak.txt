@@ -1,0 +1,70 @@
+EKAITZ ELETA MOLINA,Hombre,Enpresa,true
+Chu Chen,Mujer,Arkitektura,false
+Arkaitz Márques Etxeberria,Hombre,Magisteritza,true
+Joseba Iztueta Eizmendi,Hombre,Arkitektura,true
+Mirian Sapuppo Galain,Mujer,Gizarte Hezkuntza,true
+Ekhiñe Petriati Garalut,Mujer,Gizarte Hezkuntza,true
+Manex Darceles Garai,Hombre,Informatika,true
+Saioa Intxaurrondo Garcia,Mujer,Gizarte Hezkuntza,true
+Aitor Cengotitabengoa Iraegi,Hombre,Arkitektura,true
+AINHIZE LARRAMENDI LARRARTE,Mujer,Arkitektura,true
+Leire Lertxundi Azpiazu,Mujer,Arkitektura,true
+ane larrinaga larrucea,Mujer,Arkitektura,true
+Manex Lizaso Alcibar,Hombre,Informatika,true
+Andrea Hierro Pascual,Mujer,Psikologia,true
+Jennifer Alvarez Ostolaza,Mujer,Psikologia,true
+Leire Gomez Gonzalez,Mujer,Arkitektura,true
+Amaia Olano Martinez,Mujer,Psikologia,true
+Olatz HidalgoJimenez,Mujer,Psikologia,true
+ARITZ ETXEBERRIA MATEOS,Hombre,Arkitektura,true
+MALEN OTXOA SAENZ DE VALLUERCA,Mujer,Psikologia,true
+Lidia Casterán Pinilla,Mujer,Psikologia,true
+Sarah Boyle Garayoa,Mujer,Psikologia,true
+Anna Puibert Grima,Mujer,Gizarte Hezkuntza,false
+MIREYA GÓNGORA DOMÍNGUEZ,Mujer,Politeknika,false
+Aitor Lucas Arbosa,Hombre,Enpresa,true
+ERITZ LOSA, ESCOLANO,Hombre,Informatika,true
+Iñigo Perez Diez,Hombre,Informatika,true
+Manuel Ruiz Garcia,Hombre,Informatika,true
+Amaia Estebanez Goitia,Mujer,Psikologia,true
+Saioa Elizegi Saharrea,Mujer,Enpresa,true
+Angel Arozarena Galarregui,Hombre,Enpresa,true
+OLAIA SAN MIGUEL MICHELENA,Mujer,Enpresa,true
+iker martinez urturi,Hombre,Arkitektura,false
+Sheila Bouza,Mujer,Psikologia,false
+Zhaklin Hristova Simeonova,Mujer,Psikologia,false
+Sara García Martínez,Mujer,Psikologia,false
+Silvia Aguirre San Juan,Mujer,Psikologia,false
+JULENE GORRÓN JIMÉNEZ,Mujer,Psikologia,false
+Juan Diego Galeano Menor,Hombre,Psikologia,false
+Bingen Urbieta Aldalur,Hombre,Psikologia,true
+Maider Bastardo Arizpeleta,Mujer,Psikologia,true
+Begoña Fernández de Arangiz Zeberio,Mujer,Psikologia,false
+Diego Cueva Hilera,Hombre,Psikologia,false
+Aritz Etxaniz Orbegozo,Hombre,Psikologia,true
+Asier Arbizu Aguirre,Hombre,Enpresa,true
+Sara Ibarrola,Mujer,Psikologia,false
+Jeray Garcia Olazar,Hombre,Informatika,true
+MARINA MATUTE CANCER,Mujer,Psikologia,false
+Dánae Fernández Suárez,Mujer,Psikologia,false
+Amaia Maiza Zudaire,Mujer,Psikologia,false
+Miren Eguiara Arrazola,Mujer,Psikologia,false
+Ernesto C. Carranza Diez,Hombre,Psikologia,false
+María Gago Fernández,Mujer,Psikologia,false
+Ernesto-Miguel Garcia Diez,Hombre,Psikologia,false
+Egoitz Herrera Piñeiro,Hombre,Informatika,true
+Aibara López Estivariz,Mujer,Psikologia,false
+Elena Leon san emeterio,Mujer,Psikologia,false
+Aritz Alastuey Arguibide,Hombre,Psikologia,false
+Julen Arocena Arzalluz,Hombre,Politeknika,true
+Mikel Pajares Coira,Hombre,Politeknika,true
+Jakobe Guerra Tome,Hombre,Enpresa,true
+Nuria Aguirrezabal Lucas,Mujer,Gizarte Hezkuntza,true
+Unai Manso Egitegi,Hombre,Enpresa,true
+Eneko Urquiza Zorriqueta,Hombre,Psikologia,true
+Xabier Artola Zabaleta,Hombre,Politeknika,true
+Eva Sánchez Cambra,Mujer,Pedagogia,false
+Veselin Solenkov Radoslavov,Hombre,Informatika,false
+Maddi Marko Rada,Mujer,Gizarte Hezkuntza,true
+Olatz Lasa Zabaleta,Mujer,Pedagogia,true
+Ainhoa Liébana Aparicio,Mujer,Gizarte Hezkuntza,true

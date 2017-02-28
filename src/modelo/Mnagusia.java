@@ -89,7 +89,7 @@ public class Mnagusia {
 		//HORA DE CICLAR!!!
 		
 		
-		while(nLoop < 100) {
+		while(nLoop < 200) {
 			
 			for(int i=0; i<centros.length; i++) { //una vez por centro
 				
