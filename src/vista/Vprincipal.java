@@ -34,14 +34,9 @@ public class Vprincipal {
 			public void run() {
 				try {
 					Cprincipal.comenzarDB("datubasea");
-					//for(int i=0;i<50;i++)
-						//Cprincipal.addAlumnos("XJon Arzelus"+i+i, "Informatika", true, "Hombre");
-					//Cprincipal.addAlumnos("ZJon Arzeluz", "Informatika", false, "Hombre");
-					//Cprincipal.addAlumnos("AJon Arzelux", "Psikologia", false, "Hombre");
-					Vprincipal.añadirAlumnosTXT("ikasleak.txt");
+					//se puede cargar un txt con el formato: nombre(izen abizenak),genero(Hombre/Mujer),centro(de la tabla centros),euskera(true/false)
+					//Vprincipal.añadirAlumnosTXT("ikasleak.txt");
 					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());
-					//Vprincipal.listaAlumnos = Cprincipal.getAlumnos();
-					//window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

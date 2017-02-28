@@ -35,7 +35,7 @@ public class Cprincipal {
 				DBconexion.setAutoCommit(true);
 				Cprincipal.initialize();
 				//Añade los centros por defecto - SI SE CAMBIA EL ORDEN CAMBIAR EN Mnagusia TAMBIEN
-				Cprincipal.addCentros("Informatika");
+				/*Cprincipal.addCentros("Informatika");
 				Cprincipal.addCentros("Zuzenbidea");
 				Cprincipal.addCentros("Arkitektura");
 				Cprincipal.addCentros("Pedagogia");
@@ -44,7 +44,17 @@ public class Cprincipal {
 				Cprincipal.addCentros("Gizarte Hezkuntza");
 				Cprincipal.addCentros("Psikologia");
 				Cprincipal.addCentros("Magisteritza");
-				Cprincipal.addCentros("Enpresa");
+				Cprincipal.addCentros("Enpresa");*/
+				Cprincipal.addCentros("Psikologia");
+				Cprincipal.addCentros("Ingeniaritza");
+				Cprincipal.addCentros("Antropologia");
+				Cprincipal.addCentros("Arkitektura");
+				Cprincipal.addCentros("Informatika");
+				Cprincipal.addCentros("Magisteritza");
+				Cprincipal.addCentros("Gizarte Hezkuntza");
+				Cprincipal.addCentros("Kimika");
+				Cprincipal.addCentros("ADE");
+				Cprincipal.addCentros("Pedagogia");
 				//Añade retos para las pruebas (retos por defectu)
 				Cprincipal.addNecesidad("Atari", 0, false);
 				Cprincipal.addNecesidad("Zaharrean", 1, false);

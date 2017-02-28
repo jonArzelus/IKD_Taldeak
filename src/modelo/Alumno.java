@@ -83,7 +83,7 @@ public class Alumno {
 		int[] pref2 = new int[pref.size()];
 		for(int i=0;i<pref.size();i++) {
 			pref2[i]=pref.get(i);
-			System.out.println(pref2[i]);
+			//System.out.println(pref2[i]);
 		}
 		this.preferencias = pref2;
 	}
