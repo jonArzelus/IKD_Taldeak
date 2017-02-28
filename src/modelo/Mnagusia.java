@@ -14,13 +14,8 @@ import controlador.Cprincipal;
 import vista.JTextAreaOutputStream;
 
 public class Mnagusia {
-
-	public Mnagusia() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	
-	public static void realizarReparto(ArrayList<Alumno> alumnosLista, ArrayList<Centro> centrosLista) {
+	public static void realizarReparto(ArrayList<Alumno> alumnosLista, ArrayList<Centro> centrosLista, ArrayList<Necesidad> necesidadLista) {
 		
 		//crear una consola para el output
 		JTextArea textArea = new JTextArea (25, 80);
@@ -46,21 +41,21 @@ public class Mnagusia {
 		
 		Alumno[] alumnos = (Alumno[]) Arrays.copyOf(alumnosLista.toArray(), alumnosLista.size(),Alumno[].class);
 		Centro[] centros = (Centro[]) Arrays.copyOf(centrosLista.toArray(), centrosLista.size(),Centro[].class);
+		Necesidad[] retos = (Necesidad[]) Arrays.copyOf(necesidadLista.toArray(), necesidadLista.size(),Necesidad[].class);
 		
-		Necesidad once = new Necesidad(0, "Once");
-		Necesidad saretuz = new Necesidad(1, "Saretuz"); //EUSKARAZ
-		Necesidad miramon = new Necesidad(2, "Miramon"); //EUSKARAZ
-		Necesidad bilbo = new Necesidad(3, "Bilbo");
-		Necesidad emaus = new Necesidad(4, "Emaus");
-		Necesidad albaola = new Necesidad(5, "Albaola");
-		Necesidad kalapie = new Necesidad(0, "Kalapie");
-		Necesidad sanMarcos = new Necesidad(0, "SanMarcos");
-		Necesidad ehu = new Necesidad(0, "EHU"); //EUSKARAZ
+		/*Necesidad once = new Necesidad(0, "Once", false);
+		Necesidad saretuz = new Necesidad(1, "Saretuz", true); //EUSKARAZ
+		Necesidad miramon = new Necesidad(2, "Miramon", true); //EUSKARAZ
+		Necesidad bilbo = new Necesidad(3, "Bilbo", false);
+		Necesidad emaus = new Necesidad(4, "Emaus", false);
+		Necesidad albaola = new Necesidad(5, "Albaola", false);
+		Necesidad kalapie = new Necesidad(0, "Kalapie", false);
+		Necesidad sanMarcos = new Necesidad(0, "SanMarcos", false);
+		Necesidad ehu = new Necesidad(0, "EHU", true); //EUSKARAZ
 		
-		Necesidad[] retos = {once, saretuz, miramon, bilbo, emaus, albaola, kalapie, sanMarcos, ehu};
+		Necesidad[] retos = {once, saretuz, miramon, bilbo, emaus, albaola, kalapie, sanMarcos, ehu};*/
 		
-		for(int i=0;i<alumnos.length;i++)
-		{
+		for(int i=0;i<alumnos.length;i++) {
 			if(alumnos[i].getCentro().equals(centros[0].getNombre())) //Informatika
 				centros[0].anadirAlumno(alumnos[i]);
 			if(alumnos[i].getCentro().equals(centros[1].getNombre())) //Zuzenbidea
@@ -88,44 +83,43 @@ public class Mnagusia {
 		
 		boolean amaitua = false;
 		int nLoop = 1;
-		int alumnosMetidos = 2;
-		int n8 = 0;
+		int alumnosMetidos = 0;
+		int n8 = 0; //numero de retos con gente
 		
 		//HORA DE CICLAR!!!
 		
 		
-		while(nLoop < 100){
+		while(nLoop < 100) {
 			
-			for(int i=0; i<8; i++){
+			for(int i=0; i<centros.length; i++) { //una vez por centro
 				
-				int pop = centros[i].retoMenosPopular();
-				int max = 11;
-				int alum = 0;
+				int pop = centros[i].retoMenosPopular(); //indice del reto menos popular
+				int min = retos.length+1; //valor mayor al numero de retos
+				int alum = 0; //variable para escoger el alumno para el reto
 				
-				
-				for(int j = 0; j < centros[i].nAlumnos; j++){
+				//buscar el alumno a meter del centro en el reto pop
+				for(int j = 0; j < centros[i].nAlumnos; j++) {
 						System.out.println(centros[i].getAlumnos()[j].nombre);
-						if(centros[i].getAlumnos()[j].getPreferencias()[pop] < max){
-							max = centros[i].getAlumnos()[j].getPreferencias()[pop];
+						if(centros[i].getAlumnos()[j].getPreferencias()[pop] < min) {
+							min = centros[i].getAlumnos()[j].getPreferencias()[pop];
 							alum = j;
 						}
 				}
 				
-				
-				if((retos[pop].nAlumnos < 8) && (n8 < 6) && (centros[i].getAlumnos()[alum] != null)){
+				if((retos[pop].nAlumnos < alumnos.length/retos.length) && (n8 < 6) && (centros[i].getAlumnos()[alum] != null)) {//begiratu zenbakiak
 					retos[pop].anadirAlumno(centros[i].getAlumnos()[alum]);
-					if(retos[pop].nAlumnos == 8){
+					if(retos[pop].nAlumnos >= alumnos.length/retos.length){
 						n8++;
 					}
-					for(int j=alum; j<centros[i].nAlumnos; j++){
+					for(int j=alum; j<centros[i].nAlumnos; j++) { //elimina el alumno del array y corre el array
 						centros[i].alumnos[j] = centros[i].alumnos[j+1];
 					}
 					centros[i].nAlumnos = centros[i].nAlumnos-1;
 					alumnosMetidos++;
 				}
 				
-				centros[i].exito[pop] = 0 - (10-centros[i].exito[pop]);
-				if(alumnosMetidos == 69){
+				centros[i].exito[pop] = 0 - ((retos.length+1)-centros[i].exito[pop]); //asigna no popularidad negativa, es decir, hace el reto popular para no repetirlo
+				if(alumnosMetidos == alumnos.length){
 					break;
 				}
 				
@@ -134,11 +128,11 @@ public class Mnagusia {
 			System.out.println(alumnosMetidos);
 		}
 		
-		for(int i=0; i<8; i++){
+		for(int i=0; i<centros.length; i++){
 			for(int j = 0; j < centros[i].nAlumnos; j++){
-				for(int k=1; k < 10; k++){
+				for(int k=0; k < retos.length; k++){
 					int pref2 = centros[i].getAlumnos()[j].preferido(k);
-					if(retos[pref2].nAlumnos < 8){
+					if(retos[pref2].nAlumnos < alumnos.length/retos.length){
 						retos[pref2].anadirAlumno(centros[i].getAlumnos()[j]);
 						alumnosMetidos++;
 						break;

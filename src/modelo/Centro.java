@@ -1,5 +1,7 @@
 package modelo;
 
+import controlador.Cprincipal;
+
 public class Centro {
 
 	Alumno [] alumnos;
@@ -9,8 +11,8 @@ public class Centro {
 
 	public Centro(String n) {
 		this.nombre = n;
-		this.alumnos = new Alumno [20];
-		this.exito = new int [9];
+		this.alumnos = new Alumno [100];
+		this.exito = new int [Cprincipal.getNumeroNecesidad()];
 		nAlumnos=0;
 	}
 	
@@ -41,20 +43,20 @@ public class Centro {
 	}
 
 	public void calcularExito (){
-		int [] aux=new int [9];
+		int [] aux=new int [Cprincipal.getNumeroNecesidad()];
 		int i,k=0;
 		int min=99999;
 		//todo a 0
-		for (i=0;i<9;i++)
+		for (i=0;i<Cprincipal.getNumeroNecesidad();i++)
 			aux[i]=0;
 		//suma
 		for (i=0; i<nAlumnos;i++)
-			for (int j=0;j<9;j++)
+			for (int j=0;j<Cprincipal.getNumeroNecesidad();j++)
 				aux[j]=aux[j]+this.alumnos[i].preferencias[j];
 		//se simplifica todo a 1,2,3,4,5, es ximplex
-		for (int w =0;w<9;w++)
+		for (int w =0;w<Cprincipal.getNumeroNecesidad();w++)
 		{
-			for (i=0;i<9;i++)
+			for (i=0;i<Cprincipal.getNumeroNecesidad();i++)
 			{
 				if(aux[i]<min)
 				{
@@ -68,7 +70,7 @@ public class Centro {
 		}
 		
 	}
-	void eliminarAlumno(int alumno)
+	/*void eliminarAlumno(int alumno)
 	{
 		if(alumno ==-1)
 		{
@@ -81,13 +83,13 @@ public class Centro {
 			this.alumnos[j]=this.alumnos[j+1];
 		}
 		this.nAlumnos--;
-	}
+	}*/
 	//Comprueba si hay algún 1, luego algún 2...
 	public int mejorReto(int reto)
 	{
 		int i = 0;
 		int j = 1;
-		for(j=1;j<=9;j++)
+		for(j=0;j<Cprincipal.getNumeroNecesidad();j++)
 			for(i=0; i<this.nAlumnos;i++)
 			{
 				if(this.alumnos[i].preferencias[reto]==j && (this.alumnos[i].euskera || reto!=3))
@@ -97,7 +99,7 @@ public class Centro {
 	}
 	
 	
-	public void imprimir (){
+	/*public void imprimir (){
 		if(this.nAlumnos>0){
 		System.out.println(this.nombre + "\t\t Euskera \t Albaola \t Gureak \t MGI \t\t EGK \t\t Kalapie \t Lasalle \t Elkartu \t EHU");
 		for (int i=0;i<this.nAlumnos;i++)
@@ -109,7 +111,7 @@ public class Centro {
 		}
 		System.out.println();
 		}
-	}
+	}*/
 	
 	public int retoMenosPopular(){
 		int reto = 0;

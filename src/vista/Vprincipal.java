@@ -20,22 +20,22 @@ import java.awt.event.ActionEvent;
 public class Vprincipal {
 
 	private JFrame frame;
-	private static controlador.Cprincipal DB;
+	//private static controlador.Cprincipal DB;
 	public static ArrayList<Alumno> listaAlumnos;
 	public static ArrayList<Centro> listaCentros;
 
 	/**
-	 * Launch the application.
+	 * Launch the application. Rutina principal para lanzar la interfaz y comenzar a usar todo
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					DB = new controlador.Cprincipal("datubasea");
-					//for(int i=0;i<50;i++)
-					Cprincipal.addAlumnos("XJon Arzelus", "Informatika", true);
-					Cprincipal.addAlumnos("ZJon Arzeluz", "Informatika", false);
-					Cprincipal.addAlumnos("AJon Arzelux", "Psikologia", false);
+					Cprincipal.comenzarDB("datubasea");
+					for(int i=0;i<50;i++)
+						Cprincipal.addAlumnos("XJon Arzelus"+i+i, "Informatika", true, "Hombre");
+					//Cprincipal.addAlumnos("ZJon Arzeluz", "Informatika", false, "Hombre");
+					//Cprincipal.addAlumnos("AJon Arzelux", "Psikologia", false, "Hombre");
 					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 					//Vprincipal.listaAlumnos = Cprincipal.getAlumnos();
 					//window.frame.setVisible(true);
@@ -78,7 +78,7 @@ public class Vprincipal {
 		JButton btnAlumnos = new JButton("Alumnos");
 		btnAlumnos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Valumnos a =  new Valumnos(listaAlumnos,listaCentros);
+				Valumnos a =  new Valumnos(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 				frame.dispose();
 				//a.frame.set
 			}
@@ -89,7 +89,7 @@ public class Vprincipal {
 		JButton btnCentros = new JButton("Centros");
 		btnCentros.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Vcentros a =  new Vcentros(listaAlumnos,listaCentros);
+				Vcentros a =  new Vcentros(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 				frame.dispose();
 			}
 		});
@@ -97,6 +97,12 @@ public class Vprincipal {
 		frame.getContentPane().add(btnCentros);
 		
 		JButton btnRetos = new JButton("Retos");
+		btnRetos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Vnecesidad a = new Vnecesidad(Cprincipal.getNecesidad());
+				frame.dispose();
+			}
+		});
 		btnRetos.setBounds(20, 250, 137, 23);
 		frame.getContentPane().add(btnRetos);
 		
@@ -133,15 +139,15 @@ public class Vprincipal {
 		lblNcentros.setBounds(251, 125, 34, 14);
 		frame.getContentPane().add(lblNcentros);
 		
-		JLabel lblNretos = new JLabel("");
+		JLabel lblNretos = new JLabel(Integer.toString(Cprincipal.getNumeroNecesidad()));
 		lblNretos.setBounds(251, 150, 34, 14);
 		frame.getContentPane().add(lblNretos);
 		
 		JButton btnreparto = new JButton("\u00A1Realizar reparto!");
 		btnreparto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				modelo.Mnagusia reparto = new modelo.Mnagusia();
-				Mnagusia.realizarReparto(listaAlumnos, listaCentros);
+				//modelo.Mnagusia reparto = new modelo.Mnagusia();
+				Mnagusia.realizarReparto(Cprincipal.getAlumnos(), Cprincipal.getCentros(), Cprincipal.getNecesidad());
 			}
 		});
 		btnreparto.setBounds(295, 100, 188, 50);

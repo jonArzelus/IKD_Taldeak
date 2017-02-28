@@ -4,7 +4,7 @@ package modelo;
 public class Nagusia {
 	
 	//OBJEKTUAK DEKLARATU
-
+	/*
 	static Necesidad once = new Necesidad(0, "Once");
 	static Necesidad saretuz = new Necesidad(1, "Saretuz"); //EUSKARAZ
 	static Necesidad miramon = new Necesidad(2, "Miramon"); //EUSKARAZ
@@ -253,5 +253,5 @@ public class Nagusia {
 		
 	}
 	
-	
+	*/
 }

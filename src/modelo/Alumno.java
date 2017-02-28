@@ -1,7 +1,10 @@
 package modelo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+
+import controlador.Cprincipal;
 
 public class Alumno {
 
@@ -9,12 +12,13 @@ public class Alumno {
 	int [] preferencias;
 	String centro;
 	boolean euskera;
+	String genero;
 	
 	public String toString() {
 		if(this.euskera)
-			return this.nombre+", "+this.centro+", "+"Euskera";
+			return this.nombre+", "+this.centro+", "+"Euskera, "+genero+", "+this.getPreferenciasString();
 		else
-			return this.nombre+", "+this.centro+", "+"Castellano";
+			return this.nombre+", "+this.centro+", "+"Castellano, "+genero+", "+this.getPreferenciasString();
 	}
 	
 	public String getNombre() {
@@ -32,10 +36,24 @@ public class Alumno {
 	public int[] getPreferencias() {
 		return preferencias;
 	}
+	/**Devuelve un string con las preferencias del alumno*/
+	public String getPreferenciasString(){
+		String pref = "";
+		int x;
+		//System.out.println();
+		for(int i=0;i<this.preferencias.length;i++) {
+			x=this.preferencias[i];
+			x+=97;
+			pref=pref.concat(Character.toString ((char) x));
+			//System.out.print(x);
+			//System.out.println((char) x);
+		}
+		return pref;
+	}
 	public void setPreferencias(int[] preferencias) {
 		this.preferencias = preferencias;
 	}
-	public Alumno(String nombre, int a, int b, int c, int d, int e, int f, int g, int h, int i, String centro, boolean euskera) {
+	/*public Alumno(String nombre, int a, int b, int c, int d, int e, int f, int g, int h, int i, String centro, boolean euskera, String genero) {
 		this.nombre = nombre;
 		this.preferencias= new int[9];
 		this.preferencias[0]=a;
@@ -49,64 +67,41 @@ public class Alumno {
 		this.preferencias[8]=i;
 		this.centro=centro;
 		this.euskera=euskera;
-	}
+		this.genero=genero; //nuevo
+	}*/
 	
-	public Alumno(String nombre, String centro, boolean euskera) {
+	/**Nuevo metodo para crear alumnos con preferencias aleatorias*/
+	public Alumno(String nombre, String centro, boolean euskera, String genero) {
 		this.nombre = nombre;
 		this.centro=centro;
 		this.euskera=euskera;
+		this.genero=genero;
 		ArrayList<Integer> pref = new ArrayList<Integer>();
-		pref.add(1);
-		pref.add(2);
-		pref.add(3);
-		pref.add(4);
-		pref.add(5);
-		pref.add(6);
-		pref.add(7);
-		pref.add(8);
-		pref.add(9);
+		for(int i=0;i<Cprincipal.getNumeroNecesidad();i++)
+			pref.add(i);
 		Collections.shuffle(pref);
-		int[] pref2 = {pref.get(0),pref.get(1),pref.get(2),pref.get(3),pref.get(4),pref.get(5),pref.get(6),pref.get(7),pref.get(8)};
+		int[] pref2 = new int[pref.size()];
+		for(int i=0;i<pref.size();i++) {
+			pref2[i]=pref.get(i);
+			System.out.println(pref2[i]);
+		}
 		this.preferencias = pref2;
-		/*Random  rnd = new Random();
-		Vector <Integer> aux = new Vector<Integer>();
-		aux.add(1);
-		aux.add(2);
-		aux.add(3);
-		aux.add(4);
-		aux.add(5);
-		aux.add(6);
-		aux.add(7);
-		aux.add(8);
+	}
+	
+	/**Nuevo metodo para crear alumnos con las preferencias*/
+	public Alumno(String nombre, String preferencias, String centro, boolean euskera, String genero) {
 		this.nombre = nombre;
-		this.preferencias= new int[9];
-		int a = rnd.nextInt() % 9;
-		this.preferencias[0]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		a = rnd.nextInt() % 8;
-		this.preferencias[1]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		a = rnd.nextInt() % 7;
-		this.preferencias[2]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		a = rnd.nextInt() % 6;
-		this.preferencias[3]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		a = rnd.nextInt() % 5;
-		this.preferencias[4]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		a = rnd.nextInt() % 4;
-		this.preferencias[5]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		a = rnd.nextInt() % 3;
-		this.preferencias[6]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		a = rnd.nextInt() % 2;
-		this.preferencias[7]=aux.get(Math.abs(a));
-		aux.remove(Math.abs(a));
-		this.preferencias[8]=aux.get(0);
 		this.centro=centro;
-		this.euskera=euskera;*/
+		this.euskera=euskera;
+		this.genero=genero;
+		int x;
+		int[] pref = new int[Cprincipal.getNumeroNecesidad()];
+		for(int i=0;i<pref.length;i++) {
+			x=(int)preferencias.charAt(i);
+			x-=97;
+			pref[i]=x;
+		}
+		this.preferencias = pref;
 	}
 	
 	public void ajustarAlumno(){
@@ -115,7 +110,7 @@ public class Alumno {
 	}
 	
 	public int preferido(int a){
-		for(int i=0;i<9;i++)
+		for(int i=0;i<Cprincipal.getNumeroNecesidad();i++)
 		{
 			if(this.preferencias[i]==a)
 				return i;

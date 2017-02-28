@@ -12,6 +12,7 @@ import javax.swing.JScrollPane;
 import controlador.Cprincipal;
 import modelo.Alumno;
 import modelo.Centro;
+import modelo.Necesidad;
 
 import javax.swing.JList;
 import java.awt.event.ActionListener;
@@ -26,6 +27,7 @@ import java.awt.event.ItemEvent;
 import javax.swing.JComboBox;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.ListSelectionEvent;
+import javax.swing.ListSelectionModel;
 
 public class Valumnos {
 
@@ -41,6 +43,7 @@ public class Valumnos {
 	private JCheckBox chkactualizar;
 	private JCheckBox chknuevo;
 	private JComboBox combocentros;
+	private JComboBox combogenero;
 
 	/**
 	 * Create the application.
@@ -59,7 +62,7 @@ public class Valumnos {
 	private void initialize() {
 		frmPanelDeAdministracin = new JFrame();
 		frmPanelDeAdministracin.setTitle("Panel de administraci\u00F3n de alumnos");
-		frmPanelDeAdministracin.setBounds(100, 100, 662, 415);
+		frmPanelDeAdministracin.setBounds(100, 100, 783, 511);
 		frmPanelDeAdministracin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmPanelDeAdministracin.getContentPane().setLayout(null);
 		
@@ -70,11 +73,11 @@ public class Valumnos {
 				frmPanelDeAdministracin.dispose();
 			}
 		});
-		btnVolver.setBounds(547, 342, 89, 23);
+		btnVolver.setBounds(668, 438, 89, 23);
 		frmPanelDeAdministracin.getContentPane().add(btnVolver);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 11, 307, 354);
+		scrollPane.setBounds(10, 11, 428, 450);
 		frmPanelDeAdministracin.getContentPane().add(scrollPane);
 		
 		JList list = new JList(getModel());
@@ -85,24 +88,18 @@ public class Valumnos {
 				txtcentro.setText(listaAlumnos.get(ind).getCentro());
 				combocentros.setSelectedItem(((Alumno)list.getSelectedValue()).getCentro());
 				chkeuskera.setSelected(listaAlumnos.get(ind).getEuskera());
-				String pref = "";
+				/*String pref = "";
 				for(int i:listaAlumnos.get(ind).getPreferencias()) {
-					pref+=i;
-				}
+					char a = (char) ((char)i+97);
+					//System.out.println(a);
+					pref.concat(Character.toString(a));
+				}*/
 				//txtpreferencias.setText(listaAlumnos.get(ind).getPreferencias().toString());
-				txtpreferencias.setText(pref);
+				//System.out.println(listaAlumnos.get(ind).getPreferenciasString());
+				txtpreferencias.setText(listaAlumnos.get(ind).getPreferenciasString());
 			}
 		});
-		/*list.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent arg0) {
-				int ind = list.getSelectedIndex();
-				txtnombre.setText(listaAlumnos.get(ind).getNombre());
-				txtcentro.setText(listaAlumnos.get(ind).getCentro());
-				combocentros.setSelectedItem(((Alumno)list.getSelectedValue()).getCentro());
-				chkeuskera.setSelected(listaAlumnos.get(ind).getEuskera());
-			}
-		});*/
+
 		scrollPane.setViewportView(list);
 		
 		JButton btnEliminar = new JButton("Eliminar");
@@ -117,68 +114,68 @@ public class Valumnos {
 				}
 			}
 		});
-		btnEliminar.setBounds(327, 146, 89, 23);
+		btnEliminar.setBounds(448, 144, 89, 23);
 		frmPanelDeAdministracin.getContentPane().add(btnEliminar);
 		
 		JButton btnAnadir = new JButton("A\u00F1adir...");
 		btnAnadir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(txtnombre.getText().length()>0 && combocentros.getSelectedIndex()>-1) {
-					Cprincipal.addAlumnos(txtnombre.getText(), combocentros.getSelectedItem().toString(), chkeuskera.isSelected());
+					Cprincipal.addAlumnos(txtnombre.getText(), combocentros.getSelectedItem().toString(), chkeuskera.isSelected(),combogenero.getSelectedItem().toString());
 					actualizar();
 				}
 			}
 		});
 		btnAnadir.setEnabled(false);
-		btnAnadir.setBounds(426, 146, 89, 23);
+		btnAnadir.setBounds(547, 144, 89, 23);
 		frmPanelDeAdministracin.getContentPane().add(btnAnadir);
 		
 		JButton btnActualizar = new JButton("Actualizar...");
 		btnActualizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(txtnombre.getText().length()>0 && txtpreferencias.getText().length()==9) {
+				if(txtnombre.getText().length()>0 && txtpreferencias.getText().length()==Cprincipal.getNumeroNecesidad()) {
 					Cprincipal.updateAlumnos(txtnombre.getText(), txtpreferencias.getText());
 					actualizar();
 				}
 			}
 		});
 		btnActualizar.setEnabled(false);
-		btnActualizar.setBounds(527, 146, 109, 23);
+		btnActualizar.setBounds(648, 144, 109, 23);
 		frmPanelDeAdministracin.getContentPane().add(btnActualizar);
 		
 		txtnombre = new JTextField();
 		txtnombre.setEditable(false);
-		txtnombre.setBounds(327, 31, 309, 20);
+		txtnombre.setBounds(448, 29, 309, 20);
 		frmPanelDeAdministracin.getContentPane().add(txtnombre);
 		txtnombre.setColumns(10);
 		
 		JLabel lblnombre = new JLabel("Nombre");
-		lblnombre.setBounds(327, 13, 137, 14);
+		lblnombre.setBounds(448, 11, 137, 14);
 		frmPanelDeAdministracin.getContentPane().add(lblnombre);
 		
 		JLabel lblCentro = new JLabel("Centro");
-		lblCentro.setBounds(327, 54, 137, 14);
+		lblCentro.setBounds(448, 52, 137, 14);
 		frmPanelDeAdministracin.getContentPane().add(lblCentro);
 		
 		txtcentro = new JTextField();
 		txtcentro.setEditable(false);
 		txtcentro.setColumns(10);
-		txtcentro.setBounds(327, 72, 173, 20);
+		txtcentro.setBounds(448, 70, 173, 20);
 		frmPanelDeAdministracin.getContentPane().add(txtcentro);
 		
 		chkeuskera = new JCheckBox("Euskera");
 		chkeuskera.setEnabled(false);
-		chkeuskera.setBounds(516, 71, 109, 23);
+		chkeuskera.setBounds(637, 69, 109, 23);
 		frmPanelDeAdministracin.getContentPane().add(chkeuskera);
 		
 		txtpreferencias = new JTextField();
 		txtpreferencias.setEditable(false);
 		txtpreferencias.setColumns(10);
-		txtpreferencias.setBounds(327, 115, 309, 20);
+		txtpreferencias.setBounds(448, 113, 173, 20);
 		frmPanelDeAdministracin.getContentPane().add(txtpreferencias);
 		
 		JLabel lblpreferencias = new JLabel("Preferencias");
-		lblpreferencias.setBounds(327, 97, 137, 14);
+		lblpreferencias.setBounds(448, 95, 137, 14);
 		frmPanelDeAdministracin.getContentPane().add(lblpreferencias);
 		
 		chknuevo = new JCheckBox("Nuevo alumno");
@@ -193,6 +190,7 @@ public class Valumnos {
 					txtnombre.setEditable(true);
 					//txtpreferencias.setEditable(true);
 					chkeuskera.setEnabled(true);
+					combogenero.setEnabled(true);
 				} else {
 					btnAnadir.setEnabled(false);
 					combocentros.setVisible(false);
@@ -200,10 +198,11 @@ public class Valumnos {
 					txtnombre.setEditable(false);
 					//txtpreferencias.setEditable(false);
 					chkeuskera.setEnabled(false);
+					combogenero.setEnabled(false);
 				}
 			}
 		});
-		chknuevo.setBounds(426, 176, 109, 23);
+		chknuevo.setBounds(547, 174, 109, 23);
 		frmPanelDeAdministracin.getContentPane().add(chknuevo);
 		
 		chkeliminar = new JCheckBox("Eliminar");
@@ -217,7 +216,7 @@ public class Valumnos {
 					btnEliminar.setEnabled(false);
 			}
 		});
-		chkeliminar.setBounds(323, 176, 97, 23);
+		chkeliminar.setBounds(444, 174, 97, 23);
 		frmPanelDeAdministracin.getContentPane().add(chkeliminar);
 		
 		chkactualizar = new JCheckBox("Actualizar");
@@ -234,20 +233,46 @@ public class Valumnos {
 				}
 			}
 		});
-		chkactualizar.setBounds(537, 176, 97, 23);
+		chkactualizar.setBounds(658, 174, 97, 23);
 		frmPanelDeAdministracin.getContentPane().add(chkactualizar);
 		
 		combocentros = new JComboBox(listaCentros.toArray());
-		combocentros.setBounds(327, 72, 173, 20);
+		combocentros.setBounds(448, 70, 173, 20);
 		combocentros.setVisible(false);
 		frmPanelDeAdministracin.getContentPane().add(combocentros);
+		
+		JLabel lblGnero = new JLabel("G\u00E9nero");
+		lblGnero.setBounds(637, 95, 89, 14);
+		frmPanelDeAdministracin.getContentPane().add(lblGnero);
+		
+		String[] gen = {"Hombre","Mujer"};
+		combogenero = new JComboBox(gen);
+		combogenero.setEnabled(false);
+		combogenero.setBounds(637, 113, 120, 20);
+		frmPanelDeAdministracin.getContentPane().add(combogenero);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(448, 204, 309, 223);
+		frmPanelDeAdministracin.getContentPane().add(scrollPane_1);
+		
+		JList list_retos = new JList(getModelNecesidad());
+		list_retos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		scrollPane_1.setViewportView(list_retos);
 	}
 	
 	private static DefaultListModel getModel() {
 		model = new DefaultListModel();
 		for(Alumno x:listaAlumnos)
 			model.addElement(x);
-		System.out.println(listaAlumnos.get(0).toString());
+		//System.out.println(listaAlumnos.get(0).toString());
+		return model;
+	}
+	
+	private static DefaultListModel getModelNecesidad() {
+		model = new DefaultListModel();
+		for(Necesidad x:Cprincipal.getNecesidad())
+			model.addElement(x);
+		//System.out.println(listaAlumnos.get(0).toString());
 		return model;
 	}
 	

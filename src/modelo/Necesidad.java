@@ -1,5 +1,6 @@
 package modelo;
 
+import controlador.Cprincipal;
 
 public class Necesidad {
 
@@ -7,12 +8,21 @@ public class Necesidad {
 	int nAlumnos;
 	int indice;
 	String nombre;
+	boolean euskeraz;
 	
-	public Necesidad(int i, String n) {
-		this.alumnos = new Alumno [8];
+	public Necesidad(int i, String nombre, boolean euskeraz) {
+		this.alumnos = new Alumno [Cprincipal.getNumeroAlumnos()/Cprincipal.getNumeroNecesidad()+1];
 		nAlumnos=0;
 		indice = i;
-		this.nombre = n;
+		this.nombre = nombre;
+		this.euskeraz=euskeraz;
+	}
+	
+	public String toString() {
+		if(this.euskeraz)
+			return this.nombre+", Euskeraz >> "+Character.toString((char) (this.indice+97));
+		else
+			return this.nombre+", Gazteleraz >> "+Character.toString((char) (this.indice+97));
 	}
 	
 	public void anadirAlumno (Alumno a){
