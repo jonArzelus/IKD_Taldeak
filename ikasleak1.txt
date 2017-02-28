@@ -1,0 +1,68 @@
+Chu Chen,Mujer,Arkitektura,false
+iker martinez urturi,Hombre,Arkitektura,false
+Joseba Iztueta Eizmendi,Hombre,Arkitektura,true
+Aitor Cengotitabengoa Iraegi,Hombre,Arkitektura,true
+Ainhize Larramendi Larrarte,Mujer,Arkitektura,true
+Ane larrinaga larrucea,Mujer,Arkitektura,true
+Leire Gomez Gonzalez,Mujer,Arkitektura,true
+Aritz Etxeberria Mateos,Hombre,Arkitektura,true
+Ekaitz Eleta Molina,Hombre,Arkitektura,true
+Saioa Elizegi Saharrea,Mujer,Arkitektura,true
+Angel Arozarena Galarregui,Hombre,Arkitektura,true
+Olaia San Miguel Michelena,Mujer,Arkitektura,true
+Asier Arbizu Aguirre,Hombre,Arkitektura,true
+Jakobe Guerra Tome,Hombre,Arkitektura,true
+Aitor Lucas Arbosa,Hombre,Arkitektura,true
+Mirian Sapuppo Galain,Mujer,Arkitektura,true
+Ekhine Petriati Garalut,Mujer,Arkitektura,true
+Saioa Intxaurrondo Garcia,Mujer,Arkitektura,true
+Nuria Aguirrezabal Lucas,Mujer,Arkitektura,true
+Julen Arocena Arzalluz,Hombre,Arkitektura,true
+Mikel Pajares Coira,Hombre,Arkitektura,true
+Eva Sanchez Cambra,Mujer,Arkitektura,false
+Marisol Martinez,Mujer,Arkitektura,false
+Rebeca Dominguez,Mujer,Arkitektura,true
+Anna Puibert Grima,Mujer,Arkitektura,false
+Arkaitz Marques Etxeberria,Hombre,Arkitektura,true
+Sheila Bouza,Mujer,Arkitektura,false
+Zhaklin  Hristova Simeonova ,Mujer,Arkitektura,false
+Sara Garcia Martinez,Mujer,Arkitektura,false
+Silvia Aguirre San Juan,Mujer,Arkitektura,false
+Julene Gorron Jimenez,Mujer,Arkitektura,false
+Juan Diego Galeano Menor,Hombre,Arkitektura,false
+Begona Fernandez de Arangiz Zeberio,Mujer,Arkitektura,false
+Diego Cueva Hilera,Hombre,Arkitektura,false
+Sara Ibarrola,Mujer,Arkitektura,false
+Marina Matute Cancer,Mujer,Arkitektura,false
+Danae Fernandez Suarez,Mujer,Arkitektura,false
+Amaia Maiza Zudaire,Mujer,Arkitektura,false
+Miren Eguiara Arrazola,Mujer,Arkitektura,false
+Ernesto C. Carranza Diez,Hombre,Arkitektura,false
+Maria  Gago Fernandez,Mujer,Arkitektura,false
+Aibara Lopez Estivariz,Mujer,Arkitektura,false
+Elena Leon san emeterio,Mujer,Arkitektura,false
+Aritz Alastuey Arguibide,Hombre,Arkitektura,false
+Ernesto-Miguel  Garcia Diez ,Hombre,Arkitektura,false
+Andrea Hierro Pascual,Mujer,Arkitektura,true
+Olatz Hidalgo Jimenez,Mujer,Arkitektura,true
+Lidia Casteran Pinilla,Mujer,Arkitektura,true
+Amaia Estebanez Goitia,Mujer,Arkitektura,true
+Bingen Urbieta Aldalur,Hombre,Arkitektura,true
+Maider Bastardo Arizpeleta,Mujer,Arkitektura,true
+Aritz Etxaniz Orbegozo,Hombre,Arkitektura,true
+Eneko Urquiza Zorriqueta,Hombre,Arkitektura,true
+Jennifer Alvarez Ostolaza,Mujer,Arkitektura,true
+Amaia Olano Martinez,Mujer,Arkitektura,true
+Sarah Boyle Garayoa,Mujer,Arkitektura,true
+Veselin Solenkov Radoslavov,Hombre,Arkitektura,false
+Manex Darceles Garai,Hombre,Arkitektura,true
+Manex Lizaso Alcibar,Hombre,Arkitektura,true
+Eritz Losa Escolano,Hombre,Arkitektura,true
+Inigo Perez Diez,Hombre,Arkitektura,true
+Manuel Ruiz Garcia,Hombre,Arkitektura,true
+Jeray Garcia Olazar,Hombre,Arkitektura,true
+Egoitz Herrera Pineiro,Hombre,Arkitektura,true
+Maddi Marko Rada,Mujer,Arkitektura,true
+Olatz Lasa Zabaleta,Mujer,Arkitektura,true
+Ainhoa Liebana Aparicio,Mujer,Arkitektura,true
+Mireya Gongora Dominguez,Mujer,Arkitektura,false

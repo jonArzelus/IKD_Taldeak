@@ -106,7 +106,7 @@ public class Mnagusia {
 						}
 				}
 				
-				if((retos[pop].nAlumnos < alumnos.length/retos.length) && (n8 < 6) && (centros[i].getAlumnos()[alum] != null)) {//begiratu zenbakiak
+				if((retos[pop].nAlumnos < alumnos.length/retos.length+1) && (n8 < 11) && (centros[i].getAlumnos()[alum] != null)) {//begiratu zenbakiak
 					retos[pop].anadirAlumno(centros[i].getAlumnos()[alum]);
 					if(retos[pop].nAlumnos >= alumnos.length/retos.length){
 						n8++;
@@ -132,7 +132,7 @@ public class Mnagusia {
 			for(int j = 0; j < centros[i].nAlumnos; j++){
 				for(int k=0; k < retos.length; k++){
 					int pref2 = centros[i].getAlumnos()[j].preferido(k);
-					if(retos[pref2].nAlumnos < alumnos.length/retos.length){
+					if(retos[pref2].nAlumnos < alumnos.length/retos.length+1){
 						retos[pref2].anadirAlumno(centros[i].getAlumnos()[j]);
 						alumnosMetidos++;
 						break;
@@ -140,6 +140,59 @@ public class Mnagusia {
 				}
 			}
 		}
+		
+		/*while(nLoop < 100){
+			
+			for(int i=0; i<centros.length; i++){
+				
+				int pop = centros[i].retoMenosPopular();
+				int max = 11;
+				int alum = 0;
+				
+				
+				for(int j = 0; j < centros[i].nAlumnos; j++){
+						System.out.println(centros[i].getAlumnos()[j].nombre);
+						if(centros[i].getAlumnos()[j].getPreferencias()[pop] < max){
+							max = centros[i].getAlumnos()[j].getPreferencias()[pop];
+							alum = j;
+						}
+				}
+				
+				
+				if((retos[pop].nAlumnos < alumnosLista.size()/necesidadLista.size()+2) && (n8 < 8) && (centros[i].getAlumnos()[alum] != null)){
+					retos[pop].anadirAlumno(centros[i].getAlumnos()[alum]);
+					if(retos[pop].nAlumnos == alumnosLista.size()/necesidadLista.size()+1){
+						n8++;
+					}
+					for(int j=alum; j<centros[i].nAlumnos; j++){
+						centros[i].alumnos[j] = centros[i].alumnos[j+1];
+					}
+					centros[i].nAlumnos = centros[i].nAlumnos-1;
+					alumnosMetidos++;
+				}
+				
+				centros[i].exito[pop] = 0 - (10-centros[i].exito[pop]);
+				if(alumnosMetidos == 69){
+					break;
+				}
+				
+			}
+			nLoop++;
+			System.out.println(alumnosMetidos);
+		}
+		
+		for(int i=0; i<8; i++){
+			for(int j = 0; j < centros[i].nAlumnos; j++){
+				for(int k=1; k < 10; k++){
+					int pref2 = centros[i].getAlumnos()[j].preferido(k);
+					if(retos[pref2].nAlumnos < 8){
+						retos[pref2].anadirAlumno(centros[i].getAlumnos()[j]);
+						alumnosMetidos++;
+						break;
+					}
+				}
+			}
+		}*/
 		
 		
 		System.out.println("");

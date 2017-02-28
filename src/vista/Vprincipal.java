@@ -18,6 +18,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
 
 public class Vprincipal {
 
@@ -25,6 +26,7 @@ public class Vprincipal {
 	//private static controlador.Cprincipal DB;
 	public static ArrayList<Alumno> listaAlumnos;
 	public static ArrayList<Centro> listaCentros;
+	private JTextField txtarchivo;
 
 	/**
 	 * Launch the application. Rutina principal para lanzar la interfaz y comenzar a usar todo
@@ -150,6 +152,28 @@ public class Vprincipal {
 		});
 		btnreparto.setBounds(295, 100, 188, 50);
 		frame.getContentPane().add(btnreparto);
+		
+		txtarchivo = new JTextField();
+		txtarchivo.setBounds(180, 217, 196, 20);
+		frame.getContentPane().add(txtarchivo);
+		txtarchivo.setColumns(10);
+		
+		JButton btnarchivo = new JButton("Cargar archivo");
+		btnarchivo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				if(!txtarchivo.getText().isEmpty()) {
+					Vprincipal.añadirAlumnosTXT(txtarchivo.getText());
+					Vprincipal a = new Vprincipal(Cprincipal.getAlumnos(), Cprincipal.getCentros());
+					frame.dispose();
+				}
+			}
+		});
+		btnarchivo.setBounds(180, 250, 122, 23);
+		frame.getContentPane().add(btnarchivo);
+		
+		JLabel lblNewLabel_1 = new JLabel("Cargar archivo .txt con el siguiente nombre:");
+		lblNewLabel_1.setBounds(180, 186, 328, 28);
+		frame.getContentPane().add(lblNewLabel_1);
 	}
 	
 	public static void añadirAlumnosTXT(String nombre) {

@@ -14,7 +14,7 @@ Asier Arbizu Aguirre,Hombre,ADE,true
 Jakobe Guerra Tome,Hombre,ADE,true
 Aitor Lucas Arbosa,Hombre,ADE,true
 Mirian Sapuppo Galain,Mujer,Gizarte Hezkuntza,true
-Ekhiñe Petriati Garalut,Mujer,Gizarte Hezkuntza,true
+Ekhine Petriati Garalut,Mujer,Gizarte Hezkuntza,true
 Saioa Intxaurrondo Garcia,Mujer,Gizarte Hezkuntza,true
 Nuria Aguirrezabal Lucas,Mujer,Gizarte Hezkuntza,true
 Julen Arocena Arzalluz,Hombre,Ingeniaritza,true
@@ -30,7 +30,7 @@ Sara Garcia Martinez,Mujer,Psikologia,false
 Silvia Aguirre San Juan,Mujer,Psikologia,false
 Julene Gorron Jimenez,Mujer,Psikologia,false
 Juan Diego Galeano Menor,Hombre,Psikologia,false
-Begoña Fernandez de Arangiz Zeberio,Mujer,Psikologia,false
+Begona Fernandez de Arangiz Zeberio,Mujer,Psikologia,false
 Diego Cueva Hilera,Hombre,Psikologia,false
 Sara Ibarrola,Mujer,Psikologia,false
 Marina Matute Cancer,Mujer,Psikologia,false
@@ -59,10 +59,10 @@ Veselin Solenkov Radoslavov,Hombre,Informatika,false
 Manex Darceles Garai,Hombre,Informatika,true
 Manex Lizaso Alcibar,Hombre,Informatika,true
 Eritz Losa Escolano,Hombre,Informatika,true
-Iñigo Perez Diez,Hombre,Informatika,true
+Inigo Perez Diez,Hombre,Informatika,true
 Manuel Ruiz Garcia,Hombre,Informatika,true
 Jeray Garcia Olazar,Hombre,Informatika,true
-Egoitz Herrera Piñeiro,Hombre,Informatika,true
+Egoitz Herrera Pineiro,Hombre,Informatika,true
 Maddi Marko Rada,Mujer,Antropologia,true
 Olatz Lasa Zabaleta,Mujer,Antropologia,true
 Ainhoa Liebana Aparicio,Mujer,Antropologia,true
