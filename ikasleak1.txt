@@ -16,7 +16,6 @@ Aitor Lucas Arbosa,Hombre,Arkitektura,true
 Mirian Sapuppo Galain,Mujer,Arkitektura,true
 Ekhine Petriati Garalut,Mujer,Arkitektura,true
 Saioa Intxaurrondo Garcia,Mujer,Arkitektura,true
-Nuria Aguirrezabal Lucas,Mujer,Arkitektura,true
 Julen Arocena Arzalluz,Hombre,Arkitektura,true
 Mikel Pajares Coira,Hombre,Arkitektura,true
 Eva Sanchez Cambra,Mujer,Arkitektura,false
@@ -37,8 +36,6 @@ Marina Matute Cancer,Mujer,Arkitektura,false
 Danae Fernandez Suarez,Mujer,Arkitektura,false
 Amaia Maiza Zudaire,Mujer,Arkitektura,false
 Miren Eguiara Arrazola,Mujer,Arkitektura,false
-Ernesto C. Carranza Diez,Hombre,Arkitektura,false
-Maria  Gago Fernandez,Mujer,Arkitektura,false
 Aibara Lopez Estivariz,Mujer,Arkitektura,false
 Elena Leon san emeterio,Mujer,Arkitektura,false
 Aritz Alastuey Arguibide,Hombre,Arkitektura,false

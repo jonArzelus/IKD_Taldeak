@@ -22,6 +22,10 @@ import javax.swing.JLabel;
 import javax.swing.JCheckBox;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 import javax.swing.JComboBox;
@@ -258,6 +262,15 @@ public class Valumnos {
 		JList list_retos = new JList(getModelNecesidad());
 		list_retos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		scrollPane_1.setViewportView(list_retos);
+		
+		JButton btnexportar = new JButton("Exportar a lista.txt");
+		btnexportar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Valumnos.exportarLista();
+			}
+		});
+		btnexportar.setBounds(448, 438, 188, 23);
+		frmPanelDeAdministracin.getContentPane().add(btnexportar);
 	}
 	
 	private static DefaultListModel getModel() {
@@ -280,4 +293,26 @@ public class Valumnos {
 		Valumnos a =  new Valumnos(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 		this.frmPanelDeAdministracin.dispose();
 	}
+	
+	public static void exportarLista() {
+		//String fila;
+		//String[] partes;
+		try (BufferedWriter br = new BufferedWriter(new FileWriter("lista.txt"))) {
+			for(int i=0;i<listaAlumnos.size();i++) {
+				br.write(Integer.toString(i+1)+" - ");
+				br.write(listaAlumnos.get(0).getNombre());
+				br.write(" ("+listaAlumnos.get(0).getPreferenciasString()+")");
+				br.newLine();
+				for(int k=0;k<listaAlumnos.get(i).getPreferencias().length;k++) {
+					br.write("    ");
+					br.write(Integer.toString(k+1)+" - "+Cprincipal.getNecesidad().get(listaAlumnos.get(i).getPreferencias()[k]).toString());
+					br.newLine();
+				}
+				br.newLine();
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
 }
