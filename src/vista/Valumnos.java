@@ -300,8 +300,8 @@ public class Valumnos {
 		try (BufferedWriter br = new BufferedWriter(new FileWriter("lista.txt"))) {
 			for(int i=0;i<listaAlumnos.size();i++) {
 				br.write(Integer.toString(i+1)+" - ");
-				br.write(listaAlumnos.get(0).getNombre());
-				br.write(" ("+listaAlumnos.get(0).getPreferenciasString()+")");
+				br.write(listaAlumnos.get(i).getNombre());
+				br.write(" ("+listaAlumnos.get(i).getPreferenciasString()+")");
 				br.newLine();
 				for(int k=0;k<listaAlumnos.get(i).getPreferencias().length;k++) {
 					br.write("    ");

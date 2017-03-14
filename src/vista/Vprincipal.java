@@ -10,6 +10,7 @@ import controlador.Cprincipal;
 import modelo.Alumno;
 import modelo.Centro;
 import modelo.Mnagusia;
+import modelo.Mprincipal;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -27,6 +28,9 @@ public class Vprincipal {
 	public static ArrayList<Alumno> listaAlumnos;
 	public static ArrayList<Centro> listaCentros;
 	private JTextField txtarchivo;
+	private JTextField txtpreferencias;
+	private JTextField txtgrado;
+	private JTextField txtgenero;
 
 	/**
 	 * Launch the application. Rutina principal para lanzar la interfaz y comenzar a usar todo
@@ -66,7 +70,7 @@ public class Vprincipal {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 534, 324);
+		frame.setBounds(100, 100, 535, 324);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -115,10 +119,6 @@ public class Vprincipal {
 		btnSalir.setBounds(419, 250, 89, 23);
 		frame.getContentPane().add(btnSalir);
 		
-		JLabel lblDescripcion = new JLabel("Descripcion");
-		lblDescripcion.setBounds(180, 11, 328, 78);
-		frame.getContentPane().add(lblDescripcion);
-		
 		JLabel lblAlumnos = new JLabel("Alumnos:");
 		lblAlumnos.setBounds(180, 100, 70, 14);
 		frame.getContentPane().add(lblAlumnos);
@@ -147,10 +147,16 @@ public class Vprincipal {
 		btnreparto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//modelo.Mnagusia reparto = new modelo.Mnagusia();
-				Mnagusia.realizarReparto(Cprincipal.getAlumnos(), Cprincipal.getCentros(), Cprincipal.getNecesidad());
+				//Mnagusia.realizarReparto(Cprincipal.getAlumnos(), Cprincipal.getCentros(), Cprincipal.getNecesidad());
+				try {
+					if(!txtpreferencias.getText().equals("")&&!txtgrado.getText().equals("")&&!txtgenero.getText().equals("")&&(Double.valueOf(txtpreferencias.getText())+Double.valueOf(txtgenero.getText())+Double.valueOf(txtgrado.getText()))==100)
+						Mprincipal.realizarReparto(Cprincipal.getAlumnos(), Cprincipal.getCentros(), Cprincipal.getNecesidad(), Double.valueOf(txtpreferencias.getText()), Double.valueOf(txtgenero.getText()), Double.valueOf(txtgrado.getText()));
+				} catch (NumberFormatException e) {
+					Verror a = new Verror("Para realizar el reparto la suma de los tres campos tiene que dar 100.0 y sólo se admiten carácteres numéricos no negativos");
+				}
 			}
 		});
-		btnreparto.setBounds(295, 100, 188, 50);
+		btnreparto.setBounds(362, 132, 146, 23);
 		frame.getContentPane().add(btnreparto);
 		
 		txtarchivo = new JTextField();
@@ -174,6 +180,33 @@ public class Vprincipal {
 		JLabel lblNewLabel_1 = new JLabel("Cargar archivo .txt con el siguiente nombre:");
 		lblNewLabel_1.setBounds(180, 186, 328, 28);
 		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblGrado = new JLabel("G\u00E9nero");
+		lblGrado.setBounds(419, 100, 89, 14);
+		frame.getContentPane().add(lblGrado);
+		
+		JLabel lblPreferencias = new JLabel("Preferencias");
+		lblPreferencias.setBounds(419, 50, 89, 14);
+		frame.getContentPane().add(lblPreferencias);
+		
+		JLabel label_1 = new JLabel("Grado");
+		label_1.setBounds(419, 75, 89, 14);
+		frame.getContentPane().add(label_1);
+		
+		txtpreferencias = new JTextField();
+		txtpreferencias.setBounds(362, 47, 47, 20);
+		frame.getContentPane().add(txtpreferencias);
+		txtpreferencias.setColumns(10);
+		
+		txtgrado = new JTextField();
+		txtgrado.setColumns(10);
+		txtgrado.setBounds(362, 72, 47, 20);
+		frame.getContentPane().add(txtgrado);
+		
+		txtgenero = new JTextField();
+		txtgenero.setColumns(10);
+		txtgenero.setBounds(362, 97, 47, 20);
+		frame.getContentPane().add(txtgenero);
 	}
 	
 	public static void añadirAlumnosTXT(String nombre) {

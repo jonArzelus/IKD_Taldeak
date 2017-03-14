@@ -1,816 +1,780 @@
-1 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
+1 - Aibara Lopez Estivariz (gfbdachiej)
     1 - Donostia Sustapena, Gazteleraz >> g
-    2 - Atari, Gazteleraz >> a
-    3 - Gureak, Gazteleraz >> i
-    4 - Aguas de Añarbe, Gazteleraz >> e
-    5 - Goiener, Gazteleraz >> j
-    6 - Ostadar, Gazteleraz >> f
-    7 - Zaharrean, Gazteleraz >> b
-    8 - Medicus Mundi, Gazteleraz >> c
-    9 - EHU Iraunkortasuna, Gazteleraz >> h
-
-2 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Donostia Sustapena, Gazteleraz >> g
-    1 - Ostadar, Gazteleraz >> f
-    2 - Parke Teknologikoa, Gazteleraz >> d
+    2 - Ostadar, Gazteleraz >> f
     3 - Zaharrean, Gazteleraz >> b
-    4 - Atari, Gazteleraz >> a
-    5 - Medicus Mundi, Gazteleraz >> c
-    6 - Goiener, Gazteleraz >> j
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Gureak, Gazteleraz >> i
-    9 - EHU Iraunkortasuna, Gazteleraz >> h
-
-3 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
-    1 - Zaharrean, Gazteleraz >> b
-    2 - Donostia Sustapena, Gazteleraz >> g
-    3 - Ostadar, Gazteleraz >> f
-    4 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Parke Teknologikoa, Gazteleraz >> d
     5 - Atari, Gazteleraz >> a
     6 - Medicus Mundi, Gazteleraz >> c
-    7 - Goiener, Gazteleraz >> j
-    8 - EHU Iraunkortasuna, Gazteleraz >> h
-    9 - Gureak, Gazteleraz >> i
-
-4 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Gureak, Gazteleraz >> i
-    1 - Atari, Gazteleraz >> a
-    2 - Ostadar, Gazteleraz >> f
-    3 - Parke Teknologikoa, Gazteleraz >> d
-    4 - Goiener, Gazteleraz >> j
-    5 - Aguas de Añarbe, Gazteleraz >> e
-    6 - Medicus Mundi, Gazteleraz >> c
     7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Zaharrean, Gazteleraz >> b
+    8 - Gureak, Gazteleraz >> i
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Goiener, Gazteleraz >> j
 
-5 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - EHU Iraunkortasuna, Gazteleraz >> h
-    2 - Parke Teknologikoa, Gazteleraz >> d
-    3 - Donostia Sustapena, Gazteleraz >> g
-    4 - Gureak, Gazteleraz >> i
-    5 - Ostadar, Gazteleraz >> f
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Atari, Gazteleraz >> a
-    8 - Medicus Mundi, Gazteleraz >> c
-    9 - Goiener, Gazteleraz >> j
-
-6 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
+2 - Ainhize Larramendi Larrarte (bjiceghadf)
     1 - Zaharrean, Gazteleraz >> b
     2 - Goiener, Gazteleraz >> j
-    3 - Donostia Sustapena, Gazteleraz >> g
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Atari, Gazteleraz >> a
-    6 - Ostadar, Gazteleraz >> f
-    7 - Gureak, Gazteleraz >> i
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Medicus Mundi, Gazteleraz >> c
-
-7 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Donostia Sustapena, Gazteleraz >> g
-    2 - Ostadar, Gazteleraz >> f
-    3 - Aguas de Añarbe, Gazteleraz >> e
-    4 - Atari, Gazteleraz >> a
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Medicus Mundi, Gazteleraz >> c
-    7 - Gureak, Gazteleraz >> i
-    8 - Zaharrean, Gazteleraz >> b
-    9 - Parke Teknologikoa, Gazteleraz >> d
-
-8 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Ostadar, Gazteleraz >> f
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Atari, Gazteleraz >> a
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Parke Teknologikoa, Gazteleraz >> d
-    6 - Gureak, Gazteleraz >> i
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Medicus Mundi, Gazteleraz >> c
-
-9 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Donostia Sustapena, Gazteleraz >> g
-    2 - Parke Teknologikoa, Gazteleraz >> d
-    3 - EHU Iraunkortasuna, Gazteleraz >> h
-    4 - Gureak, Gazteleraz >> i
-    5 - Zaharrean, Gazteleraz >> b
-    6 - Atari, Gazteleraz >> a
-    7 - Ostadar, Gazteleraz >> f
-    8 - Goiener, Gazteleraz >> j
-    9 - Medicus Mundi, Gazteleraz >> c
-
-10 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Zaharrean, Gazteleraz >> b
-    2 - Gureak, Gazteleraz >> i
-    3 - Donostia Sustapena, Gazteleraz >> g
-    4 - Goiener, Gazteleraz >> j
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Medicus Mundi, Gazteleraz >> c
-    7 - Ostadar, Gazteleraz >> f
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Atari, Gazteleraz >> a
-
-11 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Ostadar, Gazteleraz >> f
-    1 - Zaharrean, Gazteleraz >> b
-    2 - Aguas de Añarbe, Gazteleraz >> e
-    3 - Goiener, Gazteleraz >> j
-    4 - Gureak, Gazteleraz >> i
-    5 - Medicus Mundi, Gazteleraz >> c
-    6 - EHU Iraunkortasuna, Gazteleraz >> h
-    7 - Atari, Gazteleraz >> a
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Donostia Sustapena, Gazteleraz >> g
-
-12 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Atari, Gazteleraz >> a
-    1 - Ostadar, Gazteleraz >> f
-    2 - Parke Teknologikoa, Gazteleraz >> d
-    3 - Aguas de Añarbe, Gazteleraz >> e
-    4 - Donostia Sustapena, Gazteleraz >> g
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Gureak, Gazteleraz >> i
-    8 - Goiener, Gazteleraz >> j
-    9 - Medicus Mundi, Gazteleraz >> c
-
-13 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Medicus Mundi, Gazteleraz >> c
-    1 - Donostia Sustapena, Gazteleraz >> g
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Aguas de Añarbe, Gazteleraz >> e
-    4 - Atari, Gazteleraz >> a
-    5 - Parke Teknologikoa, Gazteleraz >> d
-    6 - Gureak, Gazteleraz >> i
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Ostadar, Gazteleraz >> f
-    9 - Goiener, Gazteleraz >> j
-
-14 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Gureak, Gazteleraz >> i
-    1 - Ostadar, Gazteleraz >> f
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Aguas de Añarbe, Gazteleraz >> e
+    3 - Gureak, Gazteleraz >> i
     4 - Medicus Mundi, Gazteleraz >> c
-    5 - Donostia Sustapena, Gazteleraz >> g
-    6 - EHU Iraunkortasuna, Gazteleraz >> h
-    7 - Parke Teknologikoa, Gazteleraz >> d
-    8 - Atari, Gazteleraz >> a
-    9 - Goiener, Gazteleraz >> j
-
-15 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Donostia Sustapena, Gazteleraz >> g
-    2 - EHU Iraunkortasuna, Gazteleraz >> h
-    3 - Ostadar, Gazteleraz >> f
-    4 - Aguas de Añarbe, Gazteleraz >> e
-    5 - Gureak, Gazteleraz >> i
-    6 - Parke Teknologikoa, Gazteleraz >> d
-    7 - Atari, Gazteleraz >> a
-    8 - Medicus Mundi, Gazteleraz >> c
-    9 - Zaharrean, Gazteleraz >> b
-
-16 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Ostadar, Gazteleraz >> f
-    1 - Goiener, Gazteleraz >> j
-    2 - EHU Iraunkortasuna, Gazteleraz >> h
-    3 - Aguas de Añarbe, Gazteleraz >> e
-    4 - Gureak, Gazteleraz >> i
-    5 - Medicus Mundi, Gazteleraz >> c
+    5 - Aguas de Añarbe, Gazteleraz >> e
     6 - Donostia Sustapena, Gazteleraz >> g
-    7 - Atari, Gazteleraz >> a
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Zaharrean, Gazteleraz >> b
+    7 - EHU Iraunkortasuna, Gazteleraz >> h
+    8 - Atari, Gazteleraz >> a
+    9 - Parke Teknologikoa, Gazteleraz >> d
+    10 - Ostadar, Gazteleraz >> f
 
-17 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
-    1 - Goiener, Gazteleraz >> j
-    2 - Aguas de Añarbe, Gazteleraz >> e
-    3 - EHU Iraunkortasuna, Gazteleraz >> h
-    4 - Donostia Sustapena, Gazteleraz >> g
+3 - Ainhoa Liebana Aparicio (dhcefiabjg)
+    1 - Parke Teknologikoa, Gazteleraz >> d
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
+    3 - Medicus Mundi, Gazteleraz >> c
+    4 - Aguas de Añarbe, Gazteleraz >> e
     5 - Ostadar, Gazteleraz >> f
-    6 - Atari, Gazteleraz >> a
-    7 - Medicus Mundi, Gazteleraz >> c
+    6 - Gureak, Gazteleraz >> i
+    7 - Atari, Gazteleraz >> a
     8 - Zaharrean, Gazteleraz >> b
-    9 - Gureak, Gazteleraz >> i
+    9 - Goiener, Gazteleraz >> j
+    10 - Donostia Sustapena, Gazteleraz >> g
 
-18 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Gureak, Gazteleraz >> i
-    1 - EHU Iraunkortasuna, Gazteleraz >> h
+4 - Aitor Cengotitabengoa Iraegi (afbgejichd)
+    1 - Atari, Gazteleraz >> a
     2 - Ostadar, Gazteleraz >> f
-    3 - Parke Teknologikoa, Gazteleraz >> d
+    3 - Zaharrean, Gazteleraz >> b
     4 - Donostia Sustapena, Gazteleraz >> g
     5 - Aguas de Añarbe, Gazteleraz >> e
-    6 - Medicus Mundi, Gazteleraz >> c
-    7 - Goiener, Gazteleraz >> j
-    8 - Zaharrean, Gazteleraz >> b
-    9 - Atari, Gazteleraz >> a
+    6 - Goiener, Gazteleraz >> j
+    7 - Gureak, Gazteleraz >> i
+    8 - Medicus Mundi, Gazteleraz >> c
+    9 - EHU Iraunkortasuna, Gazteleraz >> h
+    10 - Parke Teknologikoa, Gazteleraz >> d
 
-19 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - EHU Iraunkortasuna, Gazteleraz >> h
-    1 - Medicus Mundi, Gazteleraz >> c
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Aguas de Añarbe, Gazteleraz >> e
+5 - Aitor Lucas Arbosa (jfbadhgcei)
+    1 - Goiener, Gazteleraz >> j
+    2 - Ostadar, Gazteleraz >> f
+    3 - Zaharrean, Gazteleraz >> b
     4 - Atari, Gazteleraz >> a
     5 - Parke Teknologikoa, Gazteleraz >> d
-    6 - Ostadar, Gazteleraz >> f
-    7 - Goiener, Gazteleraz >> j
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Gureak, Gazteleraz >> i
+    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - Medicus Mundi, Gazteleraz >> c
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Gureak, Gazteleraz >> i
 
-20 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Atari, Gazteleraz >> a
-    2 - Donostia Sustapena, Gazteleraz >> g
-    3 - Parke Teknologikoa, Gazteleraz >> d
+6 - Amaia Estebanez Goitia (gjihbacfed)
+    1 - Donostia Sustapena, Gazteleraz >> g
+    2 - Goiener, Gazteleraz >> j
+    3 - Gureak, Gazteleraz >> i
     4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Gureak, Gazteleraz >> i
-    6 - Goiener, Gazteleraz >> j
+    5 - Zaharrean, Gazteleraz >> b
+    6 - Atari, Gazteleraz >> a
     7 - Medicus Mundi, Gazteleraz >> c
     8 - Ostadar, Gazteleraz >> f
-    9 - Zaharrean, Gazteleraz >> b
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Parke Teknologikoa, Gazteleraz >> d
 
-21 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Medicus Mundi, Gazteleraz >> c
-    1 - Ostadar, Gazteleraz >> f
-    2 - EHU Iraunkortasuna, Gazteleraz >> h
-    3 - Parke Teknologikoa, Gazteleraz >> d
-    4 - Aguas de Añarbe, Gazteleraz >> e
-    5 - Donostia Sustapena, Gazteleraz >> g
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Goiener, Gazteleraz >> j
-    8 - Gureak, Gazteleraz >> i
-    9 - Atari, Gazteleraz >> a
-
-22 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Aguas de Añarbe, Gazteleraz >> e
-    2 - Parke Teknologikoa, Gazteleraz >> d
-    3 - Zaharrean, Gazteleraz >> b
-    4 - Medicus Mundi, Gazteleraz >> c
-    5 - Atari, Gazteleraz >> a
-    6 - Ostadar, Gazteleraz >> f
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Gureak, Gazteleraz >> i
-
-23 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Gureak, Gazteleraz >> i
-    1 - Aguas de Añarbe, Gazteleraz >> e
-    2 - Medicus Mundi, Gazteleraz >> c
-    3 - Ostadar, Gazteleraz >> f
-    4 - Zaharrean, Gazteleraz >> b
-    5 - Donostia Sustapena, Gazteleraz >> g
-    6 - Parke Teknologikoa, Gazteleraz >> d
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Atari, Gazteleraz >> a
-    9 - Goiener, Gazteleraz >> j
-
-24 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Medicus Mundi, Gazteleraz >> c
-    1 - Aguas de Añarbe, Gazteleraz >> e
+7 - Amaia Maiza Zudaire (bafiegdhcj)
+    1 - Zaharrean, Gazteleraz >> b
     2 - Atari, Gazteleraz >> a
-    3 - Zaharrean, Gazteleraz >> b
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Gureak, Gazteleraz >> i
-    6 - Goiener, Gazteleraz >> j
-    7 - Donostia Sustapena, Gazteleraz >> g
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Ostadar, Gazteleraz >> f
-
-25 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - EHU Iraunkortasuna, Gazteleraz >> h
-    1 - Goiener, Gazteleraz >> j
-    2 - Aguas de Añarbe, Gazteleraz >> e
-    3 - Zaharrean, Gazteleraz >> b
-    4 - Medicus Mundi, Gazteleraz >> c
-    5 - Ostadar, Gazteleraz >> f
-    6 - Gureak, Gazteleraz >> i
-    7 - Parke Teknologikoa, Gazteleraz >> d
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Atari, Gazteleraz >> a
-
-26 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Ostadar, Gazteleraz >> f
-    1 - Gureak, Gazteleraz >> i
-    2 - Donostia Sustapena, Gazteleraz >> g
-    3 - Atari, Gazteleraz >> a
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Parke Teknologikoa, Gazteleraz >> d
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Goiener, Gazteleraz >> j
-    8 - Aguas de Añarbe, Gazteleraz >> e
-    9 - Medicus Mundi, Gazteleraz >> c
-
-27 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Donostia Sustapena, Gazteleraz >> g
-    1 - EHU Iraunkortasuna, Gazteleraz >> h
-    2 - Ostadar, Gazteleraz >> f
-    3 - Goiener, Gazteleraz >> j
-    4 - Zaharrean, Gazteleraz >> b
-    5 - Atari, Gazteleraz >> a
-    6 - Gureak, Gazteleraz >> i
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Medicus Mundi, Gazteleraz >> c
-
-28 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Medicus Mundi, Gazteleraz >> c
-    2 - Donostia Sustapena, Gazteleraz >> g
-    3 - Goiener, Gazteleraz >> j
-    4 - Atari, Gazteleraz >> a
-    5 - Ostadar, Gazteleraz >> f
-    6 - EHU Iraunkortasuna, Gazteleraz >> h
-    7 - Parke Teknologikoa, Gazteleraz >> d
-    8 - Zaharrean, Gazteleraz >> b
-    9 - Gureak, Gazteleraz >> i
-
-29 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Ostadar, Gazteleraz >> f
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Gureak, Gazteleraz >> i
-    4 - Goiener, Gazteleraz >> j
-    5 - Atari, Gazteleraz >> a
-    6 - Medicus Mundi, Gazteleraz >> c
+    3 - Ostadar, Gazteleraz >> f
+    4 - Gureak, Gazteleraz >> i
+    5 - Aguas de Añarbe, Gazteleraz >> e
+    6 - Donostia Sustapena, Gazteleraz >> g
     7 - Parke Teknologikoa, Gazteleraz >> d
     8 - EHU Iraunkortasuna, Gazteleraz >> h
-    9 - Donostia Sustapena, Gazteleraz >> g
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Goiener, Gazteleraz >> j
 
-30 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
+8 - Amaia Olano Martinez (eagdijbhcf)
     1 - Aguas de Añarbe, Gazteleraz >> e
-    2 - Gureak, Gazteleraz >> i
-    3 - EHU Iraunkortasuna, Gazteleraz >> h
-    4 - Donostia Sustapena, Gazteleraz >> g
-    5 - Ostadar, Gazteleraz >> f
+    2 - Atari, Gazteleraz >> a
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - Parke Teknologikoa, Gazteleraz >> d
+    5 - Gureak, Gazteleraz >> i
     6 - Goiener, Gazteleraz >> j
     7 - Zaharrean, Gazteleraz >> b
-    8 - Atari, Gazteleraz >> a
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
     9 - Medicus Mundi, Gazteleraz >> c
+    10 - Ostadar, Gazteleraz >> f
 
-31 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Medicus Mundi, Gazteleraz >> c
-    2 - Donostia Sustapena, Gazteleraz >> g
-    3 - Goiener, Gazteleraz >> j
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Zaharrean, Gazteleraz >> b
-    6 - Gureak, Gazteleraz >> i
-    7 - Parke Teknologikoa, Gazteleraz >> d
-    8 - Ostadar, Gazteleraz >> f
-    9 - Atari, Gazteleraz >> a
-
-32 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Medicus Mundi, Gazteleraz >> c
-    1 - Zaharrean, Gazteleraz >> b
+9 - Andrea Hierro Pascual (jfheibdcag)
+    1 - Goiener, Gazteleraz >> j
     2 - Ostadar, Gazteleraz >> f
-    3 - Parke Teknologikoa, Gazteleraz >> d
+    3 - EHU Iraunkortasuna, Gazteleraz >> h
     4 - Aguas de Añarbe, Gazteleraz >> e
-    5 - Atari, Gazteleraz >> a
-    6 - Donostia Sustapena, Gazteleraz >> g
-    7 - Gureak, Gazteleraz >> i
-    8 - Goiener, Gazteleraz >> j
-    9 - EHU Iraunkortasuna, Gazteleraz >> h
-
-33 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Gureak, Gazteleraz >> i
-    1 - Parke Teknologikoa, Gazteleraz >> d
-    2 - Medicus Mundi, Gazteleraz >> c
-    3 - Goiener, Gazteleraz >> j
-    4 - Zaharrean, Gazteleraz >> b
-    5 - Ostadar, Gazteleraz >> f
-    6 - Aguas de Añarbe, Gazteleraz >> e
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Donostia Sustapena, Gazteleraz >> g
+    5 - Gureak, Gazteleraz >> i
+    6 - Zaharrean, Gazteleraz >> b
+    7 - Parke Teknologikoa, Gazteleraz >> d
+    8 - Medicus Mundi, Gazteleraz >> c
     9 - Atari, Gazteleraz >> a
+    10 - Donostia Sustapena, Gazteleraz >> g
 
-34 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
+10 - Ane larrinaga larrucea (ifcbghadej)
     1 - Gureak, Gazteleraz >> i
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Donostia Sustapena, Gazteleraz >> g
-    4 - Atari, Gazteleraz >> a
-    5 - Goiener, Gazteleraz >> j
+    2 - Ostadar, Gazteleraz >> f
+    3 - Medicus Mundi, Gazteleraz >> c
+    4 - Zaharrean, Gazteleraz >> b
+    5 - Donostia Sustapena, Gazteleraz >> g
     6 - EHU Iraunkortasuna, Gazteleraz >> h
-    7 - Aguas de Añarbe, Gazteleraz >> e
+    7 - Atari, Gazteleraz >> a
+    8 - Parke Teknologikoa, Gazteleraz >> d
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Goiener, Gazteleraz >> j
+
+11 - Angel Arozarena Galarregui (dhbgeiafcj)
+    1 - Parke Teknologikoa, Gazteleraz >> d
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
+    3 - Zaharrean, Gazteleraz >> b
+    4 - Donostia Sustapena, Gazteleraz >> g
+    5 - Aguas de Añarbe, Gazteleraz >> e
+    6 - Gureak, Gazteleraz >> i
+    7 - Atari, Gazteleraz >> a
     8 - Ostadar, Gazteleraz >> f
     9 - Medicus Mundi, Gazteleraz >> c
+    10 - Goiener, Gazteleraz >> j
 
-35 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Ostadar, Gazteleraz >> f
-    1 - Zaharrean, Gazteleraz >> b
-    2 - Gureak, Gazteleraz >> i
-    3 - EHU Iraunkortasuna, Gazteleraz >> h
-    4 - Goiener, Gazteleraz >> j
-    5 - Medicus Mundi, Gazteleraz >> c
-    6 - Atari, Gazteleraz >> a
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Donostia Sustapena, Gazteleraz >> g
-
-36 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
-    1 - EHU Iraunkortasuna, Gazteleraz >> h
-    2 - Medicus Mundi, Gazteleraz >> c
-    3 - Ostadar, Gazteleraz >> f
-    4 - Goiener, Gazteleraz >> j
-    5 - Atari, Gazteleraz >> a
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Donostia Sustapena, Gazteleraz >> g
-    8 - Gureak, Gazteleraz >> i
-    9 - Aguas de Añarbe, Gazteleraz >> e
-
-37 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - EHU Iraunkortasuna, Gazteleraz >> h
+12 - Anna Puibert Grima (dicbjghaef)
     1 - Parke Teknologikoa, Gazteleraz >> d
-    2 - Atari, Gazteleraz >> a
+    2 - Gureak, Gazteleraz >> i
     3 - Medicus Mundi, Gazteleraz >> c
     4 - Zaharrean, Gazteleraz >> b
     5 - Goiener, Gazteleraz >> j
     6 - Donostia Sustapena, Gazteleraz >> g
+    7 - EHU Iraunkortasuna, Gazteleraz >> h
+    8 - Atari, Gazteleraz >> a
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Ostadar, Gazteleraz >> f
+
+13 - Aritz Alastuey Arguibide (cbhaiegjfd)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Zaharrean, Gazteleraz >> b
+    3 - EHU Iraunkortasuna, Gazteleraz >> h
+    4 - Atari, Gazteleraz >> a
+    5 - Gureak, Gazteleraz >> i
+    6 - Aguas de Añarbe, Gazteleraz >> e
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - Goiener, Gazteleraz >> j
+    9 - Ostadar, Gazteleraz >> f
+    10 - Parke Teknologikoa, Gazteleraz >> d
+
+14 - Aritz Etxaniz Orbegozo (fdejahgbic)
+    1 - Ostadar, Gazteleraz >> f
+    2 - Parke Teknologikoa, Gazteleraz >> d
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Goiener, Gazteleraz >> j
+    5 - Atari, Gazteleraz >> a
+    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - Zaharrean, Gazteleraz >> b
+    9 - Gureak, Gazteleraz >> i
+    10 - Medicus Mundi, Gazteleraz >> c
+
+15 - Aritz Etxeberria Mateos (ehacifgbdj)
+    1 - Aguas de Añarbe, Gazteleraz >> e
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
+    3 - Atari, Gazteleraz >> a
+    4 - Medicus Mundi, Gazteleraz >> c
+    5 - Gureak, Gazteleraz >> i
+    6 - Ostadar, Gazteleraz >> f
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - Zaharrean, Gazteleraz >> b
+    9 - Parke Teknologikoa, Gazteleraz >> d
+    10 - Goiener, Gazteleraz >> j
+
+16 - Arkaitz Marques Etxeberria (ghidfjaecb)
+    1 - Donostia Sustapena, Gazteleraz >> g
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
+    3 - Gureak, Gazteleraz >> i
+    4 - Parke Teknologikoa, Gazteleraz >> d
+    5 - Ostadar, Gazteleraz >> f
+    6 - Goiener, Gazteleraz >> j
+    7 - Atari, Gazteleraz >> a
+    8 - Aguas de Añarbe, Gazteleraz >> e
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Zaharrean, Gazteleraz >> b
+
+17 - Asier Arbizu Aguirre (edghaijcfb)
+    1 - Aguas de Añarbe, Gazteleraz >> e
+    2 - Parke Teknologikoa, Gazteleraz >> d
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - EHU Iraunkortasuna, Gazteleraz >> h
+    5 - Atari, Gazteleraz >> a
+    6 - Gureak, Gazteleraz >> i
+    7 - Goiener, Gazteleraz >> j
+    8 - Medicus Mundi, Gazteleraz >> c
+    9 - Ostadar, Gazteleraz >> f
+    10 - Zaharrean, Gazteleraz >> b
+
+18 - Begona Fernandez de Arangiz Zeberio (bagfjceihd)
+    1 - Zaharrean, Gazteleraz >> b
+    2 - Atari, Gazteleraz >> a
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - Ostadar, Gazteleraz >> f
+    5 - Goiener, Gazteleraz >> j
+    6 - Medicus Mundi, Gazteleraz >> c
     7 - Aguas de Añarbe, Gazteleraz >> e
     8 - Gureak, Gazteleraz >> i
-    9 - Ostadar, Gazteleraz >> f
+    9 - EHU Iraunkortasuna, Gazteleraz >> h
+    10 - Parke Teknologikoa, Gazteleraz >> d
 
-38 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Ostadar, Gazteleraz >> f
+19 - Bingen Urbieta Aldalur (chijgaefdb)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
+    3 - Gureak, Gazteleraz >> i
+    4 - Goiener, Gazteleraz >> j
+    5 - Donostia Sustapena, Gazteleraz >> g
+    6 - Atari, Gazteleraz >> a
+    7 - Aguas de Añarbe, Gazteleraz >> e
+    8 - Ostadar, Gazteleraz >> f
+    9 - Parke Teknologikoa, Gazteleraz >> d
+    10 - Zaharrean, Gazteleraz >> b
+
+20 - Chu Chen (aiebfgcjdh)
+    1 - Atari, Gazteleraz >> a
     2 - Gureak, Gazteleraz >> i
     3 - Aguas de Añarbe, Gazteleraz >> e
-    4 - Atari, Gazteleraz >> a
-    5 - Medicus Mundi, Gazteleraz >> c
-    6 - EHU Iraunkortasuna, Gazteleraz >> h
-    7 - Donostia Sustapena, Gazteleraz >> g
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Zaharrean, Gazteleraz >> b
-
-39 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Ostadar, Gazteleraz >> f
-    1 - Zaharrean, Gazteleraz >> b
-    2 - Parke Teknologikoa, Gazteleraz >> d
-    3 - EHU Iraunkortasuna, Gazteleraz >> h
-    4 - Atari, Gazteleraz >> a
-    5 - Donostia Sustapena, Gazteleraz >> g
-    6 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Zaharrean, Gazteleraz >> b
+    5 - Ostadar, Gazteleraz >> f
+    6 - Donostia Sustapena, Gazteleraz >> g
     7 - Medicus Mundi, Gazteleraz >> c
     8 - Goiener, Gazteleraz >> j
-    9 - Gureak, Gazteleraz >> i
+    9 - Parke Teknologikoa, Gazteleraz >> d
+    10 - EHU Iraunkortasuna, Gazteleraz >> h
 
-40 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
-    1 - Goiener, Gazteleraz >> j
-    2 - Ostadar, Gazteleraz >> f
-    3 - Zaharrean, Gazteleraz >> b
-    4 - Gureak, Gazteleraz >> i
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Medicus Mundi, Gazteleraz >> c
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Atari, Gazteleraz >> a
-
-41 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Donostia Sustapena, Gazteleraz >> g
-    2 - EHU Iraunkortasuna, Gazteleraz >> h
-    3 - Medicus Mundi, Gazteleraz >> c
-    4 - Aguas de Añarbe, Gazteleraz >> e
-    5 - Atari, Gazteleraz >> a
-    6 - Parke Teknologikoa, Gazteleraz >> d
-    7 - Gureak, Gazteleraz >> i
-    8 - Ostadar, Gazteleraz >> f
-    9 - Zaharrean, Gazteleraz >> b
-
-42 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Parke Teknologikoa, Gazteleraz >> d
-    2 - Zaharrean, Gazteleraz >> b
+21 - Danae Fernandez Suarez (iegcfhbajd)
+    1 - Gureak, Gazteleraz >> i
+    2 - Aguas de Añarbe, Gazteleraz >> e
     3 - Donostia Sustapena, Gazteleraz >> g
     4 - Medicus Mundi, Gazteleraz >> c
-    5 - Gureak, Gazteleraz >> i
-    6 - Ostadar, Gazteleraz >> f
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Atari, Gazteleraz >> a
-    9 - Aguas de Añarbe, Gazteleraz >> e
-
-43 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - EHU Iraunkortasuna, Gazteleraz >> h
-    2 - Medicus Mundi, Gazteleraz >> c
-    3 - Parke Teknologikoa, Gazteleraz >> d
-    4 - Zaharrean, Gazteleraz >> b
-    5 - Aguas de Añarbe, Gazteleraz >> e
-    6 - Ostadar, Gazteleraz >> f
-    7 - Atari, Gazteleraz >> a
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Gureak, Gazteleraz >> i
-
-44 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Donostia Sustapena, Gazteleraz >> g
-    1 - Atari, Gazteleraz >> a
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Goiener, Gazteleraz >> j
-    4 - Gureak, Gazteleraz >> i
-    5 - Parke Teknologikoa, Gazteleraz >> d
-    6 - Medicus Mundi, Gazteleraz >> c
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Ostadar, Gazteleraz >> f
-    9 - Aguas de Añarbe, Gazteleraz >> e
-
-45 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
-    1 - Zaharrean, Gazteleraz >> b
-    2 - Donostia Sustapena, Gazteleraz >> g
-    3 - Ostadar, Gazteleraz >> f
-    4 - Atari, Gazteleraz >> a
-    5 - Aguas de Añarbe, Gazteleraz >> e
-    6 - Medicus Mundi, Gazteleraz >> c
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Gureak, Gazteleraz >> i
-
-46 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
-    1 - Atari, Gazteleraz >> a
-    2 - Ostadar, Gazteleraz >> f
-    3 - Medicus Mundi, Gazteleraz >> c
-    4 - Zaharrean, Gazteleraz >> b
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Aguas de Añarbe, Gazteleraz >> e
-    7 - Gureak, Gazteleraz >> i
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Goiener, Gazteleraz >> j
-
-47 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Atari, Gazteleraz >> a
-    2 - Goiener, Gazteleraz >> j
-    3 - Donostia Sustapena, Gazteleraz >> g
-    4 - Parke Teknologikoa, Gazteleraz >> d
-    5 - Gureak, Gazteleraz >> i
-    6 - Medicus Mundi, Gazteleraz >> c
-    7 - Ostadar, Gazteleraz >> f
-    8 - Zaharrean, Gazteleraz >> b
-    9 - EHU Iraunkortasuna, Gazteleraz >> h
-
-48 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
-    1 - Medicus Mundi, Gazteleraz >> c
-    2 - Goiener, Gazteleraz >> j
-    3 - EHU Iraunkortasuna, Gazteleraz >> h
-    4 - Ostadar, Gazteleraz >> f
-    5 - Gureak, Gazteleraz >> i
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Donostia Sustapena, Gazteleraz >> g
-    8 - Aguas de Añarbe, Gazteleraz >> e
-    9 - Atari, Gazteleraz >> a
-
-49 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - EHU Iraunkortasuna, Gazteleraz >> h
-    1 - Zaharrean, Gazteleraz >> b
-    2 - Parke Teknologikoa, Gazteleraz >> d
-    3 - Medicus Mundi, Gazteleraz >> c
-    4 - Atari, Gazteleraz >> a
-    5 - Donostia Sustapena, Gazteleraz >> g
-    6 - Goiener, Gazteleraz >> j
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Ostadar, Gazteleraz >> f
-    9 - Gureak, Gazteleraz >> i
-
-50 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Ostadar, Gazteleraz >> f
-    1 - Atari, Gazteleraz >> a
-    2 - Aguas de Añarbe, Gazteleraz >> e
-    3 - Gureak, Gazteleraz >> i
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Zaharrean, Gazteleraz >> b
-    6 - Parke Teknologikoa, Gazteleraz >> d
-    7 - Medicus Mundi, Gazteleraz >> c
-    8 - Goiener, Gazteleraz >> j
-    9 - Donostia Sustapena, Gazteleraz >> g
-
-51 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Zaharrean, Gazteleraz >> b
-    1 - Aguas de Añarbe, Gazteleraz >> e
-    2 - Goiener, Gazteleraz >> j
-    3 - Atari, Gazteleraz >> a
-    4 - Parke Teknologikoa, Gazteleraz >> d
     5 - Ostadar, Gazteleraz >> f
     6 - EHU Iraunkortasuna, Gazteleraz >> h
-    7 - Gureak, Gazteleraz >> i
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Medicus Mundi, Gazteleraz >> c
-
-52 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Medicus Mundi, Gazteleraz >> c
-    2 - Ostadar, Gazteleraz >> f
-    3 - Parke Teknologikoa, Gazteleraz >> d
-    4 - Atari, Gazteleraz >> a
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Donostia Sustapena, Gazteleraz >> g
-    8 - Gureak, Gazteleraz >> i
+    7 - Zaharrean, Gazteleraz >> b
+    8 - Atari, Gazteleraz >> a
     9 - Goiener, Gazteleraz >> j
+    10 - Parke Teknologikoa, Gazteleraz >> d
 
-53 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Zaharrean, Gazteleraz >> b
-    1 - Gureak, Gazteleraz >> i
-    2 - EHU Iraunkortasuna, Gazteleraz >> h
+22 - Diego Cueva Hilera (baghjifecd)
+    1 - Zaharrean, Gazteleraz >> b
+    2 - Atari, Gazteleraz >> a
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - EHU Iraunkortasuna, Gazteleraz >> h
+    5 - Goiener, Gazteleraz >> j
+    6 - Gureak, Gazteleraz >> i
+    7 - Ostadar, Gazteleraz >> f
+    8 - Aguas de Añarbe, Gazteleraz >> e
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Parke Teknologikoa, Gazteleraz >> d
+
+23 - Egoitz Herrera Pineiro (bjegchaifd)
+    1 - Zaharrean, Gazteleraz >> b
+    2 - Goiener, Gazteleraz >> j
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Donostia Sustapena, Gazteleraz >> g
+    5 - Medicus Mundi, Gazteleraz >> c
+    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    7 - Atari, Gazteleraz >> a
+    8 - Gureak, Gazteleraz >> i
+    9 - Ostadar, Gazteleraz >> f
+    10 - Parke Teknologikoa, Gazteleraz >> d
+
+24 - Ekaitz Eleta Molina (agdhejibfc)
+    1 - Atari, Gazteleraz >> a
+    2 - Donostia Sustapena, Gazteleraz >> g
+    3 - Parke Teknologikoa, Gazteleraz >> d
+    4 - EHU Iraunkortasuna, Gazteleraz >> h
+    5 - Aguas de Añarbe, Gazteleraz >> e
+    6 - Goiener, Gazteleraz >> j
+    7 - Gureak, Gazteleraz >> i
+    8 - Zaharrean, Gazteleraz >> b
+    9 - Ostadar, Gazteleraz >> f
+    10 - Medicus Mundi, Gazteleraz >> c
+
+25 - Ekhine Petriati Garalut (ciejdgbafh)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Gureak, Gazteleraz >> i
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Goiener, Gazteleraz >> j
+    5 - Parke Teknologikoa, Gazteleraz >> d
+    6 - Donostia Sustapena, Gazteleraz >> g
+    7 - Zaharrean, Gazteleraz >> b
+    8 - Atari, Gazteleraz >> a
+    9 - Ostadar, Gazteleraz >> f
+    10 - EHU Iraunkortasuna, Gazteleraz >> h
+
+26 - Elena Leon san emeterio (gfibcdhjae)
+    1 - Donostia Sustapena, Gazteleraz >> g
+    2 - Ostadar, Gazteleraz >> f
+    3 - Gureak, Gazteleraz >> i
+    4 - Zaharrean, Gazteleraz >> b
+    5 - Medicus Mundi, Gazteleraz >> c
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - EHU Iraunkortasuna, Gazteleraz >> h
+    8 - Goiener, Gazteleraz >> j
+    9 - Atari, Gazteleraz >> a
+    10 - Aguas de Añarbe, Gazteleraz >> e
+
+27 - Eneko Urquiza Zorriqueta (begdjaihfc)
+    1 - Zaharrean, Gazteleraz >> b
+    2 - Aguas de Añarbe, Gazteleraz >> e
     3 - Donostia Sustapena, Gazteleraz >> g
     4 - Parke Teknologikoa, Gazteleraz >> d
+    5 - Goiener, Gazteleraz >> j
+    6 - Atari, Gazteleraz >> a
+    7 - Gureak, Gazteleraz >> i
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Ostadar, Gazteleraz >> f
+    10 - Medicus Mundi, Gazteleraz >> c
+
+28 - Eritz Losa Escolano (fahgcjiedb)
+    1 - Ostadar, Gazteleraz >> f
+    2 - Atari, Gazteleraz >> a
+    3 - EHU Iraunkortasuna, Gazteleraz >> h
+    4 - Donostia Sustapena, Gazteleraz >> g
     5 - Medicus Mundi, Gazteleraz >> c
     6 - Goiener, Gazteleraz >> j
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Ostadar, Gazteleraz >> f
-    9 - Atari, Gazteleraz >> a
+    7 - Gureak, Gazteleraz >> i
+    8 - Aguas de Añarbe, Gazteleraz >> e
+    9 - Parke Teknologikoa, Gazteleraz >> d
+    10 - Zaharrean, Gazteleraz >> b
 
-54 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
+29 - Ernesto-Miguel  Garcia Diez  (bhjefcaigd)
     1 - Zaharrean, Gazteleraz >> b
-    2 - Medicus Mundi, Gazteleraz >> c
-    3 - Parke Teknologikoa, Gazteleraz >> d
-    4 - Gureak, Gazteleraz >> i
-    5 - Atari, Gazteleraz >> a
-    6 - Donostia Sustapena, Gazteleraz >> g
-    7 - EHU Iraunkortasuna, Gazteleraz >> h
-    8 - Ostadar, Gazteleraz >> f
-    9 - Goiener, Gazteleraz >> j
-
-55 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Medicus Mundi, Gazteleraz >> c
-    1 - Parke Teknologikoa, Gazteleraz >> d
-    2 - Atari, Gazteleraz >> a
-    3 - Gureak, Gazteleraz >> i
-    4 - Donostia Sustapena, Gazteleraz >> g
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Ostadar, Gazteleraz >> f
-    8 - Goiener, Gazteleraz >> j
-    9 - Aguas de Añarbe, Gazteleraz >> e
-
-56 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Donostia Sustapena, Gazteleraz >> g
-    1 - Ostadar, Gazteleraz >> f
-    2 - Aguas de Añarbe, Gazteleraz >> e
-    3 - Gureak, Gazteleraz >> i
-    4 - Parke Teknologikoa, Gazteleraz >> d
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Atari, Gazteleraz >> a
-    8 - Medicus Mundi, Gazteleraz >> c
-    9 - Goiener, Gazteleraz >> j
-
-57 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Donostia Sustapena, Gazteleraz >> g
-    1 - Aguas de Añarbe, Gazteleraz >> e
-    2 - Zaharrean, Gazteleraz >> b
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
     3 - Goiener, Gazteleraz >> j
-    4 - Atari, Gazteleraz >> a
-    5 - Parke Teknologikoa, Gazteleraz >> d
-    6 - Gureak, Gazteleraz >> i
-    7 - Medicus Mundi, Gazteleraz >> c
-    8 - Ostadar, Gazteleraz >> f
-    9 - EHU Iraunkortasuna, Gazteleraz >> h
-
-58 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Parke Teknologikoa, Gazteleraz >> d
-    2 - Donostia Sustapena, Gazteleraz >> g
-    3 - Medicus Mundi, Gazteleraz >> c
-    4 - Ostadar, Gazteleraz >> f
-    5 - Zaharrean, Gazteleraz >> b
-    6 - EHU Iraunkortasuna, Gazteleraz >> h
-    7 - Goiener, Gazteleraz >> j
+    4 - Aguas de Añarbe, Gazteleraz >> e
+    5 - Ostadar, Gazteleraz >> f
+    6 - Medicus Mundi, Gazteleraz >> c
+    7 - Atari, Gazteleraz >> a
     8 - Gureak, Gazteleraz >> i
-    9 - Atari, Gazteleraz >> a
+    9 - Donostia Sustapena, Gazteleraz >> g
+    10 - Parke Teknologikoa, Gazteleraz >> d
 
-59 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Donostia Sustapena, Gazteleraz >> g
+30 - Eva Sanchez Cambra (adbifhegjc)
+    1 - Atari, Gazteleraz >> a
+    2 - Parke Teknologikoa, Gazteleraz >> d
+    3 - Zaharrean, Gazteleraz >> b
+    4 - Gureak, Gazteleraz >> i
+    5 - Ostadar, Gazteleraz >> f
+    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    7 - Aguas de Añarbe, Gazteleraz >> e
+    8 - Donostia Sustapena, Gazteleraz >> g
+    9 - Goiener, Gazteleraz >> j
+    10 - Medicus Mundi, Gazteleraz >> c
+
+31 - Inigo Perez Diez (jbicafdehg)
     1 - Goiener, Gazteleraz >> j
     2 - Zaharrean, Gazteleraz >> b
-    3 - Medicus Mundi, Gazteleraz >> c
-    4 - Gureak, Gazteleraz >> i
+    3 - Gureak, Gazteleraz >> i
+    4 - Medicus Mundi, Gazteleraz >> c
     5 - Atari, Gazteleraz >> a
-    6 - Aguas de Añarbe, Gazteleraz >> e
+    6 - Ostadar, Gazteleraz >> f
     7 - Parke Teknologikoa, Gazteleraz >> d
-    8 - Ostadar, Gazteleraz >> f
+    8 - Aguas de Añarbe, Gazteleraz >> e
     9 - EHU Iraunkortasuna, Gazteleraz >> h
+    10 - Donostia Sustapena, Gazteleraz >> g
 
-60 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Goiener, Gazteleraz >> j
+32 - Jakobe Guerra Tome (dahjcbgfie)
+    1 - Parke Teknologikoa, Gazteleraz >> d
+    2 - Atari, Gazteleraz >> a
+    3 - EHU Iraunkortasuna, Gazteleraz >> h
+    4 - Goiener, Gazteleraz >> j
+    5 - Medicus Mundi, Gazteleraz >> c
+    6 - Zaharrean, Gazteleraz >> b
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - Ostadar, Gazteleraz >> f
+    9 - Gureak, Gazteleraz >> i
+    10 - Aguas de Añarbe, Gazteleraz >> e
+
+33 - Jennifer Alvarez Ostolaza (hgebdjcaif)
+    1 - EHU Iraunkortasuna, Gazteleraz >> h
+    2 - Donostia Sustapena, Gazteleraz >> g
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Zaharrean, Gazteleraz >> b
+    5 - Parke Teknologikoa, Gazteleraz >> d
+    6 - Goiener, Gazteleraz >> j
+    7 - Medicus Mundi, Gazteleraz >> c
+    8 - Atari, Gazteleraz >> a
+    9 - Gureak, Gazteleraz >> i
+    10 - Ostadar, Gazteleraz >> f
+
+34 - Jeray Garcia Olazar (cjfdeighab)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Goiener, Gazteleraz >> j
+    3 - Ostadar, Gazteleraz >> f
+    4 - Parke Teknologikoa, Gazteleraz >> d
+    5 - Aguas de Añarbe, Gazteleraz >> e
+    6 - Gureak, Gazteleraz >> i
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Atari, Gazteleraz >> a
+    10 - Zaharrean, Gazteleraz >> b
+
+35 - Joseba Iztueta Eizmendi (cbaghdefji)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Zaharrean, Gazteleraz >> b
+    3 - Atari, Gazteleraz >> a
+    4 - Donostia Sustapena, Gazteleraz >> g
+    5 - EHU Iraunkortasuna, Gazteleraz >> h
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - Aguas de Añarbe, Gazteleraz >> e
+    8 - Ostadar, Gazteleraz >> f
+    9 - Goiener, Gazteleraz >> j
+    10 - Gureak, Gazteleraz >> i
+
+36 - Juan Diego Galeano Menor (egijdahcfb)
+    1 - Aguas de Añarbe, Gazteleraz >> e
+    2 - Donostia Sustapena, Gazteleraz >> g
+    3 - Gureak, Gazteleraz >> i
+    4 - Goiener, Gazteleraz >> j
+    5 - Parke Teknologikoa, Gazteleraz >> d
+    6 - Atari, Gazteleraz >> a
+    7 - EHU Iraunkortasuna, Gazteleraz >> h
+    8 - Medicus Mundi, Gazteleraz >> c
+    9 - Ostadar, Gazteleraz >> f
+    10 - Zaharrean, Gazteleraz >> b
+
+37 - Julen Arocena Arzalluz (digabefchj)
     1 - Parke Teknologikoa, Gazteleraz >> d
     2 - Gureak, Gazteleraz >> i
     3 - Donostia Sustapena, Gazteleraz >> g
-    4 - Zaharrean, Gazteleraz >> b
-    5 - EHU Iraunkortasuna, Gazteleraz >> h
-    6 - Ostadar, Gazteleraz >> f
-    7 - Medicus Mundi, Gazteleraz >> c
-    8 - Atari, Gazteleraz >> a
-    9 - Aguas de Añarbe, Gazteleraz >> e
-
-61 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Atari, Gazteleraz >> a
-    1 - Donostia Sustapena, Gazteleraz >> g
-    2 - Goiener, Gazteleraz >> j
-    3 - Zaharrean, Gazteleraz >> b
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Parke Teknologikoa, Gazteleraz >> d
+    4 - Atari, Gazteleraz >> a
+    5 - Zaharrean, Gazteleraz >> b
     6 - Aguas de Añarbe, Gazteleraz >> e
-    7 - Gureak, Gazteleraz >> i
-    8 - Ostadar, Gazteleraz >> f
-    9 - Medicus Mundi, Gazteleraz >> c
-
-62 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Zaharrean, Gazteleraz >> b
-    1 - EHU Iraunkortasuna, Gazteleraz >> h
-    2 - Atari, Gazteleraz >> a
-    3 - Donostia Sustapena, Gazteleraz >> g
-    4 - Ostadar, Gazteleraz >> f
-    5 - Gureak, Gazteleraz >> i
-    6 - Parke Teknologikoa, Gazteleraz >> d
-    7 - Medicus Mundi, Gazteleraz >> c
-    8 - Goiener, Gazteleraz >> j
-    9 - Aguas de Añarbe, Gazteleraz >> e
-
-63 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Aguas de Añarbe, Gazteleraz >> e
-    1 - Medicus Mundi, Gazteleraz >> c
-    2 - Parke Teknologikoa, Gazteleraz >> d
-    3 - EHU Iraunkortasuna, Gazteleraz >> h
-    4 - Ostadar, Gazteleraz >> f
-    5 - Gureak, Gazteleraz >> i
-    6 - Zaharrean, Gazteleraz >> b
-    7 - Goiener, Gazteleraz >> j
-    8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Atari, Gazteleraz >> a
-
-64 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Gureak, Gazteleraz >> i
-    1 - Goiener, Gazteleraz >> j
-    2 - Zaharrean, Gazteleraz >> b
-    3 - Ostadar, Gazteleraz >> f
-    4 - EHU Iraunkortasuna, Gazteleraz >> h
-    5 - Aguas de Añarbe, Gazteleraz >> e
-    6 - Donostia Sustapena, Gazteleraz >> g
-    7 - Atari, Gazteleraz >> a
+    7 - Ostadar, Gazteleraz >> f
     8 - Medicus Mundi, Gazteleraz >> c
-    9 - Parke Teknologikoa, Gazteleraz >> d
+    9 - EHU Iraunkortasuna, Gazteleraz >> h
+    10 - Goiener, Gazteleraz >> j
 
-65 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Parke Teknologikoa, Gazteleraz >> d
+38 - Julene Gorron Jimenez (dfgbchaiej)
+    1 - Parke Teknologikoa, Gazteleraz >> d
+    2 - Ostadar, Gazteleraz >> f
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - Zaharrean, Gazteleraz >> b
+    5 - Medicus Mundi, Gazteleraz >> c
+    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    7 - Atari, Gazteleraz >> a
+    8 - Gureak, Gazteleraz >> i
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Goiener, Gazteleraz >> j
+
+39 - Leire Gomez Gonzalez (dcehfijagb)
+    1 - Parke Teknologikoa, Gazteleraz >> d
+    2 - Medicus Mundi, Gazteleraz >> c
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - EHU Iraunkortasuna, Gazteleraz >> h
+    5 - Ostadar, Gazteleraz >> f
+    6 - Gureak, Gazteleraz >> i
+    7 - Goiener, Gazteleraz >> j
+    8 - Atari, Gazteleraz >> a
+    9 - Donostia Sustapena, Gazteleraz >> g
+    10 - Zaharrean, Gazteleraz >> b
+
+40 - Lidia Casteran Pinilla (bhgifdaejc)
     1 - Zaharrean, Gazteleraz >> b
     2 - EHU Iraunkortasuna, Gazteleraz >> h
-    3 - Ostadar, Gazteleraz >> f
-    4 - Atari, Gazteleraz >> a
-    5 - Medicus Mundi, Gazteleraz >> c
-    6 - Donostia Sustapena, Gazteleraz >> g
-    7 - Aguas de Añarbe, Gazteleraz >> e
-    8 - Goiener, Gazteleraz >> j
-    9 - Gureak, Gazteleraz >> i
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - Gureak, Gazteleraz >> i
+    5 - Ostadar, Gazteleraz >> f
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - Atari, Gazteleraz >> a
+    8 - Aguas de Añarbe, Gazteleraz >> e
+    9 - Goiener, Gazteleraz >> j
+    10 - Medicus Mundi, Gazteleraz >> c
 
-66 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Ostadar, Gazteleraz >> f
+41 - Maddi Marko Rada (hgaeidjbfc)
+    1 - EHU Iraunkortasuna, Gazteleraz >> h
+    2 - Donostia Sustapena, Gazteleraz >> g
+    3 - Atari, Gazteleraz >> a
+    4 - Aguas de Añarbe, Gazteleraz >> e
+    5 - Gureak, Gazteleraz >> i
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - Goiener, Gazteleraz >> j
+    8 - Zaharrean, Gazteleraz >> b
+    9 - Ostadar, Gazteleraz >> f
+    10 - Medicus Mundi, Gazteleraz >> c
+
+42 - Maider Bastardo Arizpeleta (jceifbghad)
     1 - Goiener, Gazteleraz >> j
-    2 - EHU Iraunkortasuna, Gazteleraz >> h
-    3 - Zaharrean, Gazteleraz >> b
-    4 - Medicus Mundi, Gazteleraz >> c
+    2 - Medicus Mundi, Gazteleraz >> c
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Gureak, Gazteleraz >> i
+    5 - Ostadar, Gazteleraz >> f
+    6 - Zaharrean, Gazteleraz >> b
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Atari, Gazteleraz >> a
+    10 - Parke Teknologikoa, Gazteleraz >> d
+
+43 - Manex Darceles Garai (heafdcigjb)
+    1 - EHU Iraunkortasuna, Gazteleraz >> h
+    2 - Aguas de Añarbe, Gazteleraz >> e
+    3 - Atari, Gazteleraz >> a
+    4 - Ostadar, Gazteleraz >> f
     5 - Parke Teknologikoa, Gazteleraz >> d
-    6 - Atari, Gazteleraz >> a
+    6 - Medicus Mundi, Gazteleraz >> c
     7 - Gureak, Gazteleraz >> i
     8 - Donostia Sustapena, Gazteleraz >> g
-    9 - Aguas de Añarbe, Gazteleraz >> e
+    9 - Goiener, Gazteleraz >> j
+    10 - Zaharrean, Gazteleraz >> b
 
-67 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Atari, Gazteleraz >> a
-    1 - EHU Iraunkortasuna, Gazteleraz >> h
+44 - Manex Lizaso Alcibar (biafgdjhce)
+    1 - Zaharrean, Gazteleraz >> b
+    2 - Gureak, Gazteleraz >> i
+    3 - Atari, Gazteleraz >> a
+    4 - Ostadar, Gazteleraz >> f
+    5 - Donostia Sustapena, Gazteleraz >> g
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - Goiener, Gazteleraz >> j
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Aguas de Añarbe, Gazteleraz >> e
+
+45 - Manuel Ruiz Garcia (aifcejbhgd)
+    1 - Atari, Gazteleraz >> a
+    2 - Gureak, Gazteleraz >> i
+    3 - Ostadar, Gazteleraz >> f
+    4 - Medicus Mundi, Gazteleraz >> c
+    5 - Aguas de Añarbe, Gazteleraz >> e
+    6 - Goiener, Gazteleraz >> j
+    7 - Zaharrean, Gazteleraz >> b
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Donostia Sustapena, Gazteleraz >> g
+    10 - Parke Teknologikoa, Gazteleraz >> d
+
+46 - Marina Matute Cancer (caijhgfdeb)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Atari, Gazteleraz >> a
+    3 - Gureak, Gazteleraz >> i
+    4 - Goiener, Gazteleraz >> j
+    5 - EHU Iraunkortasuna, Gazteleraz >> h
+    6 - Donostia Sustapena, Gazteleraz >> g
+    7 - Ostadar, Gazteleraz >> f
+    8 - Parke Teknologikoa, Gazteleraz >> d
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Zaharrean, Gazteleraz >> b
+
+47 - Marisol Martinez (dgabfjihec)
+    1 - Parke Teknologikoa, Gazteleraz >> d
+    2 - Donostia Sustapena, Gazteleraz >> g
+    3 - Atari, Gazteleraz >> a
+    4 - Zaharrean, Gazteleraz >> b
+    5 - Ostadar, Gazteleraz >> f
+    6 - Goiener, Gazteleraz >> j
+    7 - Gureak, Gazteleraz >> i
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - Medicus Mundi, Gazteleraz >> c
+
+48 - Mikel Pajares Coira (dfiehbjcga)
+    1 - Parke Teknologikoa, Gazteleraz >> d
     2 - Ostadar, Gazteleraz >> f
     3 - Gureak, Gazteleraz >> i
-    4 - Medicus Mundi, Gazteleraz >> c
-    5 - Donostia Sustapena, Gazteleraz >> g
+    4 - Aguas de Añarbe, Gazteleraz >> e
+    5 - EHU Iraunkortasuna, Gazteleraz >> h
+    6 - Zaharrean, Gazteleraz >> b
+    7 - Goiener, Gazteleraz >> j
+    8 - Medicus Mundi, Gazteleraz >> c
+    9 - Donostia Sustapena, Gazteleraz >> g
+    10 - Atari, Gazteleraz >> a
+
+49 - Miren Eguiara Arrazola (ihjafebdcg)
+    1 - Gureak, Gazteleraz >> i
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
+    3 - Goiener, Gazteleraz >> j
+    4 - Atari, Gazteleraz >> a
+    5 - Ostadar, Gazteleraz >> f
     6 - Aguas de Añarbe, Gazteleraz >> e
     7 - Zaharrean, Gazteleraz >> b
     8 - Parke Teknologikoa, Gazteleraz >> d
-    9 - Goiener, Gazteleraz >> j
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Donostia Sustapena, Gazteleraz >> g
 
-68 - Aibara Lopez Estivariz (dgaiejfbch)
-    0 - Gureak, Gazteleraz >> i
-    1 - Aguas de Añarbe, Gazteleraz >> e
-    2 - Atari, Gazteleraz >> a
-    3 - Ostadar, Gazteleraz >> f
+50 - Mireya Gongora Dominguez (ghbcfedaji)
+    1 - Donostia Sustapena, Gazteleraz >> g
+    2 - EHU Iraunkortasuna, Gazteleraz >> h
+    3 - Zaharrean, Gazteleraz >> b
     4 - Medicus Mundi, Gazteleraz >> c
-    5 - Goiener, Gazteleraz >> j
-    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    5 - Ostadar, Gazteleraz >> f
+    6 - Aguas de Añarbe, Gazteleraz >> e
     7 - Parke Teknologikoa, Gazteleraz >> d
+    8 - Atari, Gazteleraz >> a
+    9 - Goiener, Gazteleraz >> j
+    10 - Gureak, Gazteleraz >> i
+
+51 - Mirian Sapuppo Galain (jfebdhicag)
+    1 - Goiener, Gazteleraz >> j
+    2 - Ostadar, Gazteleraz >> f
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Zaharrean, Gazteleraz >> b
+    5 - Parke Teknologikoa, Gazteleraz >> d
+    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    7 - Gureak, Gazteleraz >> i
+    8 - Medicus Mundi, Gazteleraz >> c
+    9 - Atari, Gazteleraz >> a
+    10 - Donostia Sustapena, Gazteleraz >> g
+
+52 - Olaia San Miguel Michelena (jbgehiafdc)
+    1 - Goiener, Gazteleraz >> j
+    2 - Zaharrean, Gazteleraz >> b
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - Aguas de Añarbe, Gazteleraz >> e
+    5 - EHU Iraunkortasuna, Gazteleraz >> h
+    6 - Gureak, Gazteleraz >> i
+    7 - Atari, Gazteleraz >> a
+    8 - Ostadar, Gazteleraz >> f
+    9 - Parke Teknologikoa, Gazteleraz >> d
+    10 - Medicus Mundi, Gazteleraz >> c
+
+53 - Olatz Hidalgo Jimenez (fjbaeicghd)
+    1 - Ostadar, Gazteleraz >> f
+    2 - Goiener, Gazteleraz >> j
+    3 - Zaharrean, Gazteleraz >> b
+    4 - Atari, Gazteleraz >> a
+    5 - Aguas de Añarbe, Gazteleraz >> e
+    6 - Gureak, Gazteleraz >> i
+    7 - Medicus Mundi, Gazteleraz >> c
+    8 - Donostia Sustapena, Gazteleraz >> g
+    9 - EHU Iraunkortasuna, Gazteleraz >> h
+    10 - Parke Teknologikoa, Gazteleraz >> d
+
+54 - Olatz Lasa Zabaleta (cedfgjihba)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Aguas de Añarbe, Gazteleraz >> e
+    3 - Parke Teknologikoa, Gazteleraz >> d
+    4 - Ostadar, Gazteleraz >> f
+    5 - Donostia Sustapena, Gazteleraz >> g
+    6 - Goiener, Gazteleraz >> j
+    7 - Gureak, Gazteleraz >> i
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Zaharrean, Gazteleraz >> b
+    10 - Atari, Gazteleraz >> a
+
+55 - Rebeca Dominguez (ebdgifhacj)
+    1 - Aguas de Añarbe, Gazteleraz >> e
+    2 - Zaharrean, Gazteleraz >> b
+    3 - Parke Teknologikoa, Gazteleraz >> d
+    4 - Donostia Sustapena, Gazteleraz >> g
+    5 - Gureak, Gazteleraz >> i
+    6 - Ostadar, Gazteleraz >> f
+    7 - EHU Iraunkortasuna, Gazteleraz >> h
+    8 - Atari, Gazteleraz >> a
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Goiener, Gazteleraz >> j
+
+56 - Saioa Elizegi Saharrea (ejbigcafdh)
+    1 - Aguas de Añarbe, Gazteleraz >> e
+    2 - Goiener, Gazteleraz >> j
+    3 - Zaharrean, Gazteleraz >> b
+    4 - Gureak, Gazteleraz >> i
+    5 - Donostia Sustapena, Gazteleraz >> g
+    6 - Medicus Mundi, Gazteleraz >> c
+    7 - Atari, Gazteleraz >> a
+    8 - Ostadar, Gazteleraz >> f
+    9 - Parke Teknologikoa, Gazteleraz >> d
+    10 - EHU Iraunkortasuna, Gazteleraz >> h
+
+57 - Saioa Intxaurrondo Garcia (fgeajdhbci)
+    1 - Ostadar, Gazteleraz >> f
+    2 - Donostia Sustapena, Gazteleraz >> g
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Atari, Gazteleraz >> a
+    5 - Goiener, Gazteleraz >> j
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - EHU Iraunkortasuna, Gazteleraz >> h
+    8 - Zaharrean, Gazteleraz >> b
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Gureak, Gazteleraz >> i
+
+58 - Sara Garcia Martinez (cifjdahgbe)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Gureak, Gazteleraz >> i
+    3 - Ostadar, Gazteleraz >> f
+    4 - Goiener, Gazteleraz >> j
+    5 - Parke Teknologikoa, Gazteleraz >> d
+    6 - Atari, Gazteleraz >> a
+    7 - EHU Iraunkortasuna, Gazteleraz >> h
     8 - Donostia Sustapena, Gazteleraz >> g
     9 - Zaharrean, Gazteleraz >> b
+    10 - Aguas de Añarbe, Gazteleraz >> e
+
+59 - Sara Ibarrola (fagcbdjieh)
+    1 - Ostadar, Gazteleraz >> f
+    2 - Atari, Gazteleraz >> a
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - Medicus Mundi, Gazteleraz >> c
+    5 - Zaharrean, Gazteleraz >> b
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - Goiener, Gazteleraz >> j
+    8 - Gureak, Gazteleraz >> i
+    9 - Aguas de Añarbe, Gazteleraz >> e
+    10 - EHU Iraunkortasuna, Gazteleraz >> h
+
+60 - Sarah Boyle Garayoa (ciedagbhfj)
+    1 - Medicus Mundi, Gazteleraz >> c
+    2 - Gureak, Gazteleraz >> i
+    3 - Aguas de Añarbe, Gazteleraz >> e
+    4 - Parke Teknologikoa, Gazteleraz >> d
+    5 - Atari, Gazteleraz >> a
+    6 - Donostia Sustapena, Gazteleraz >> g
+    7 - Zaharrean, Gazteleraz >> b
+    8 - EHU Iraunkortasuna, Gazteleraz >> h
+    9 - Ostadar, Gazteleraz >> f
+    10 - Goiener, Gazteleraz >> j
+
+61 - Sheila Bouza (jfdgihbace)
+    1 - Goiener, Gazteleraz >> j
+    2 - Ostadar, Gazteleraz >> f
+    3 - Parke Teknologikoa, Gazteleraz >> d
+    4 - Donostia Sustapena, Gazteleraz >> g
+    5 - Gureak, Gazteleraz >> i
+    6 - EHU Iraunkortasuna, Gazteleraz >> h
+    7 - Zaharrean, Gazteleraz >> b
+    8 - Atari, Gazteleraz >> a
+    9 - Medicus Mundi, Gazteleraz >> c
+    10 - Aguas de Añarbe, Gazteleraz >> e
+
+62 - Silvia Aguirre San Juan (eidhgacbfj)
+    1 - Aguas de Añarbe, Gazteleraz >> e
+    2 - Gureak, Gazteleraz >> i
+    3 - Parke Teknologikoa, Gazteleraz >> d
+    4 - EHU Iraunkortasuna, Gazteleraz >> h
+    5 - Donostia Sustapena, Gazteleraz >> g
+    6 - Atari, Gazteleraz >> a
+    7 - Medicus Mundi, Gazteleraz >> c
+    8 - Zaharrean, Gazteleraz >> b
+    9 - Ostadar, Gazteleraz >> f
+    10 - Goiener, Gazteleraz >> j
+
+63 - Veselin Solenkov Radoslavov (ifhagdcbje)
+    1 - Gureak, Gazteleraz >> i
+    2 - Ostadar, Gazteleraz >> f
+    3 - EHU Iraunkortasuna, Gazteleraz >> h
+    4 - Atari, Gazteleraz >> a
+    5 - Donostia Sustapena, Gazteleraz >> g
+    6 - Parke Teknologikoa, Gazteleraz >> d
+    7 - Medicus Mundi, Gazteleraz >> c
+    8 - Zaharrean, Gazteleraz >> b
+    9 - Goiener, Gazteleraz >> j
+    10 - Aguas de Añarbe, Gazteleraz >> e
+
+64 - Zhaklin  Hristova Simeonova  (hfadbcgeij)
+    1 - EHU Iraunkortasuna, Gazteleraz >> h
+    2 - Ostadar, Gazteleraz >> f
+    3 - Atari, Gazteleraz >> a
+    4 - Parke Teknologikoa, Gazteleraz >> d
+    5 - Zaharrean, Gazteleraz >> b
+    6 - Medicus Mundi, Gazteleraz >> c
+    7 - Donostia Sustapena, Gazteleraz >> g
+    8 - Aguas de Añarbe, Gazteleraz >> e
+    9 - Gureak, Gazteleraz >> i
+    10 - Goiener, Gazteleraz >> j
+
+65 - iker martinez urturi (bigcaedjfh)
+    1 - Zaharrean, Gazteleraz >> b
+    2 - Gureak, Gazteleraz >> i
+    3 - Donostia Sustapena, Gazteleraz >> g
+    4 - Medicus Mundi, Gazteleraz >> c
+    5 - Atari, Gazteleraz >> a
+    6 - Aguas de Añarbe, Gazteleraz >> e
+    7 - Parke Teknologikoa, Gazteleraz >> d
+    8 - Goiener, Gazteleraz >> j
+    9 - Ostadar, Gazteleraz >> f
+    10 - EHU Iraunkortasuna, Gazteleraz >> h
 
