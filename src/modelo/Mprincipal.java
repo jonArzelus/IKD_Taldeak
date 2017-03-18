@@ -5,6 +5,7 @@ import java.awt.Container;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
@@ -48,26 +49,28 @@ public class Mprincipal {
 		        int thombre; //la cantidad de hombres en el grado
 		        
 		        //crear un array para calcular los coeficientes de los retos por cada alumno
-		        ArrayList<ArrayList<Double>> lista = new ArrayList<ArrayList<Double>>(alumnosLista.size());
+		        List<List<Double>> lista = new ArrayList<List<Double>>();
 		        for(int i=0;i<alumnosLista.size();i++) {
-		        	lista.add(new ArrayList<Double>(necesidadLista.size()));
-		        	for(int k=0;k<lista.get(i).size();k++)
-		        		lista.get(i).set(k,new Double(0.0));
+		        	lista.add(new ArrayList<Double>());
+		        	for(int k=0;k<necesidadLista.size();k++)
+		        		lista.get(i).add(new Double(0.0));
 		        }
 		        
 		        /**EL REPARTO*/
-		        
+		        //int nVueltas = alumnosLista.size();
 		        Collections.shuffle(alumnosLista); //poner un factor aleatorio en el reparto
 		        
 		        for(int x=0;x<alumnosLista.size();x++) {
 			        //calcular los coeficientes para todos los retos y todos los alumnos
 			        Double coeficiente=0.0;
 			        for(int i=0;i<alumnosLista.size();i++) {
+			        	System.out.print("i="+i+", ");
 			        	for(int k=0;k<necesidadLista.size();k++) {
-			        		coeficiente=((10.0/necesidadLista.size())*(alumnosLista.get(i).getPreferencias()[k]+1))*pref;
+			        		coeficiente=((10.0/necesidadLista.size())*(alumnosLista.get(i).getPreferencias()[k]+1))*(-pref); //sacar el valor de éste reto
 			        		lista.get(i).set(k, coeficiente);
 			        	}
 			        }
+			        System.out.println();
 			        
 			        //meter un alumno en cada reto
 			        int max; //el alumno optimo para el reto actual (i)
@@ -81,8 +84,15 @@ public class Mprincipal {
 			        	alumnosLista.remove(max);
 			        	lista.remove(max);
 			        }
+			        System.out.println("- ROUND "+x+":");
+			        System.out.println(lista.toString());
 		        }
+		        System.out.println("###");
 		        System.out.println(lista.toString());
+		        System.out.println("");
+		        for(Necesidad n: necesidadLista) {
+		        	n.imprimir();
+		        }
 		        
 	}
 

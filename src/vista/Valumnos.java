@@ -263,7 +263,7 @@ public class Valumnos {
 		list_retos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		scrollPane_1.setViewportView(list_retos);
 		
-		JButton btnexportar = new JButton("Exportar a lista.txt");
+		JButton btnexportar = new JButton("Exportar todo a lista.txt");
 		btnexportar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Valumnos.exportarLista();

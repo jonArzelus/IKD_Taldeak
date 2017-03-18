@@ -47,6 +47,8 @@ public class Vprincipal {
 					//se puede cargar un txt con el formato: nombre(izen abizenak),genero(Hombre/Mujer),centro(de la tabla centros),euskera(true/false)
 					//Vprincipal.añadirAlumnosTXT("ikasleak.txt");
 					Vprincipal window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());
+					window.frame.dispose();
+					window = new Vprincipal(Cprincipal.getAlumnos(),Cprincipal.getCentros());
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
