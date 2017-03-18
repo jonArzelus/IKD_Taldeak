@@ -35,16 +35,6 @@ public class Cprincipal {
 				DBconexion.setAutoCommit(true);
 				Cprincipal.initialize();
 				//Añade los centros por defecto - SI SE CAMBIA EL ORDEN CAMBIAR EN Mnagusia TAMBIEN
-				/*Cprincipal.addCentros("Informatika");
-				Cprincipal.addCentros("Zuzenbidea");
-				Cprincipal.addCentros("Arkitektura");
-				Cprincipal.addCentros("Pedagogia");
-				Cprincipal.addCentros("Politeknika");
-				Cprincipal.addCentros("Erizanitza");
-				Cprincipal.addCentros("Gizarte Hezkuntza");
-				Cprincipal.addCentros("Psikologia");
-				Cprincipal.addCentros("Magisteritza");
-				Cprincipal.addCentros("Enpresa");*/
 				Cprincipal.addCentros("Psikologia");
 				Cprincipal.addCentros("Ingeniaritza");
 				Cprincipal.addCentros("Antropologia");
@@ -55,7 +45,7 @@ public class Cprincipal {
 				Cprincipal.addCentros("Kimika");
 				Cprincipal.addCentros("ADE");
 				Cprincipal.addCentros("Pedagogia");
-				//Añade retos para las pruebas (retos por defectu)
+				//Añade retos para las pruebas (retos por defectu). Si se modifica el numero hay que reiniciar el programa y meter de nuevo las preferencias
 				Cprincipal.addNecesidad("Atari", 0, false);
 				Cprincipal.addNecesidad("Zaharrean", 1, false);
 				Cprincipal.addNecesidad("Medicus Mundi", 2, false);
@@ -69,11 +59,7 @@ public class Cprincipal {
 			}
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//.getClass().getName() + ": " + e.getMessage()
-			//System.exit(0);
 		}
-		//if (!existe)
-			//Cprincipal.initialize();
 		System.out.println("Base de datos abierta exitosamente");
 	}
 
@@ -97,7 +83,6 @@ public class Cprincipal {
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
 		}
 	}
 
@@ -116,7 +101,6 @@ public class Cprincipal {
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
 		}
 	}
 
@@ -130,7 +114,6 @@ public class Cprincipal {
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
 		}
 	}
 	
@@ -144,7 +127,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 	}
 
@@ -152,15 +134,12 @@ public class Cprincipal {
 	public static ArrayList<Alumno> getAlumnos() {
 		ArrayList<Alumno> lista = new ArrayList<Alumno>();
 	    Statement stmt = null;
-	    //char[] pref = null;
 	    try {
 	      stmt = DBconexion.createStatement();
 	      ResultSet rs = stmt.executeQuery( "SELECT * FROM ALUMNOS;" );
 	      while ( rs.next()) {
 	    	  if((!(rs.getString(5)==null)) && rs.getString(5).length()==Cprincipal.getNumeroNecesidad()) {
 	    		  System.out.println(rs.getString(5));
-	    		  //pref=rs.getString(5).toCharArray();
-	    		  //pref.toString();
 	    		  lista.add(new Alumno(rs.getString(2), rs.getString(5), rs.getString(3), Boolean.valueOf(rs.getString(4)),rs.getString(5)));
 	    	  } else {
 		    	  lista.add(new Alumno(rs.getString(2),rs.getString(3),Boolean.valueOf(rs.getString(4)),rs.getString(6)));	  
@@ -171,7 +150,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 	    Collections.sort(lista, new AlumnoComparator());
 		return lista;
@@ -187,7 +165,6 @@ public class Cprincipal {
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
 		}
 	}
 
@@ -201,7 +178,6 @@ public class Cprincipal {
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
 		}
 	}
 	
@@ -216,7 +192,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 	}
 
@@ -234,7 +209,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 		return lista;
 	}
@@ -249,7 +223,6 @@ public class Cprincipal {
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
 		}
 	}
 
@@ -263,7 +236,6 @@ public class Cprincipal {
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			//System.exit(0);
 		}
 	}
 	
@@ -278,7 +250,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 	}
 
@@ -296,7 +267,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 		return lista;
 	}
@@ -314,7 +284,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 		return n;
 	}
@@ -332,7 +301,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 		return n;
 	}
@@ -350,7 +318,6 @@ public class Cprincipal {
 	      stmt.close();
 	    } catch ( Exception e ) {
 	      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-	      //System.exit(0);
 	    }
 		return n;
 	}

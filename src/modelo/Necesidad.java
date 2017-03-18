@@ -35,12 +35,19 @@ public class Necesidad {
 		alumnos.add(a);
 	}
 	
-	public void imprimir ()
+	public void imprimir()
 	{
+		ArrayList<Integer> pref = new ArrayList<Integer>();
 		System.out.println(this.indice+"    "+this.nombre);
-		for(int i=0;i<alumnos.size();i++)
-		{
-			System.out.println("\t" + (i+1)+ " " + this.alumnos.get(i).nombre + " " + this.alumnos.get(i).preferencias[indice]+" "+this.alumnos.get(i).euskera);
+		for(int i=0;i<alumnos.size();i++) {
+			System.out.print("	[");
+			for(int p: this.alumnos.get(i).preferencias) {
+				System.out.print(p+",");
+				pref.add(p);
+			}
+			System.out.println("]");
+			System.out.println("\t" + (i+1)+ "- " + this.alumnos.get(i).nombre + ", <" + pref.indexOf(this.indice)+">, euskera: "+this.alumnos.get(i).euskera);
+			pref.clear();
 		}
 	}
 }

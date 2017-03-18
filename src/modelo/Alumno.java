@@ -102,12 +102,13 @@ public class Alumno {
 			pref[i]=x;
 		}
 		this.preferencias = pref;
+		System.out.println(this.preferencias[0]);
 	}
 	
-	public void ajustarAlumno(){
+	/*public void ajustarAlumno(){
 		if(!euskera)
 			this.preferencias[3]=9999;
-	}
+	}*/
 	
 	public int preferido(int a){
 		for(int i=0;i<Cprincipal.getNumeroNecesidad();i++)
