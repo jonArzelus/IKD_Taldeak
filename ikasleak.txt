@@ -1,69 +1,19 @@
-Chu Chen,Mujer,Arkitektura,false
-iker martinez urturi,Hombre,Arkitektura,false
-Joseba Iztueta Eizmendi,Hombre,Arkitektura,true
-Aitor Cengotitabengoa Iraegi,Hombre,Arkitektura,true
-Ainhize Larramendi Larrarte,Mujer,Arkitektura,true
-Ane larrinaga larrucea,Mujer,Arkitektura,true
-Leire Gomez Gonzalez,Mujer,Arkitektura,true
-Aritz Etxeberria Mateos,Hombre,Arkitektura,true
-Ekaitz Eleta Molina,Hombre,ADE,true
-Saioa Elizegi Saharrea,Mujer,ADE,true
-Angel Arozarena Galarregui,Hombre,ADE,true
-Olaia San Miguel Michelena,Mujer,ADE,true
-Asier Arbizu Aguirre,Hombre,ADE,true
-Jakobe Guerra Tome,Hombre,ADE,true
-Aitor Lucas Arbosa,Hombre,ADE,true
-Mirian Sapuppo Galain,Mujer,Gizarte Hezkuntza,true
-Ekhine Petriati Garalut,Mujer,Gizarte Hezkuntza,true
-Saioa Intxaurrondo Garcia,Mujer,Gizarte Hezkuntza,true
-Nuria Aguirrezabal Lucas,Mujer,Gizarte Hezkuntza,true
-Julen Arocena Arzalluz,Hombre,Ingeniaritza,true
-Mikel Pajares Coira,Hombre,Ingeniaritza,true
-Eva Sanchez Cambra,Mujer,Pedagogia,false
-Marisol Martinez,Mujer,Pedagogia,false
-Rebeca Dominguez,Mujer,Pedagogia,true
-Anna Puibert Grima,Mujer,Gizarte Hezkuntza,false
-Arkaitz Marques Etxeberria,Hombre,Magisteritza,true
-Sheila Bouza,Mujer,Psikologia,false
-Zhaklin  Hristova Simeonova ,Mujer,Psikologia,false
-Sara Garcia Martinez,Mujer,Psikologia,false
-Silvia Aguirre San Juan,Mujer,Psikologia,false
-Julene Gorron Jimenez,Mujer,Psikologia,false
-Juan Diego Galeano Menor,Hombre,Psikologia,false
-Begona Fernandez de Arangiz Zeberio,Mujer,Psikologia,false
-Diego Cueva Hilera,Hombre,Psikologia,false
-Sara Ibarrola,Mujer,Psikologia,false
-Marina Matute Cancer,Mujer,Psikologia,false
-Danae Fernandez Suarez,Mujer,Psikologia,false
-Amaia Maiza Zudaire,Mujer,Psikologia,false
-Miren Eguiara Arrazola,Mujer,Psikologia,false
-Ernesto C. Carranza Diez,Hombre,Psikologia,false
-Maria  Gago Fernandez,Mujer,Psikologia,false
-Aibara Lopez Estivariz,Mujer,Psikologia,false
-Elena Leon san emeterio,Mujer,Psikologia,false
-Aritz Alastuey Arguibide,Hombre,Psikologia,false
-Ernesto-Miguel  Garcia Diez ,Hombre,Psikologia,false
-Malen Otxoa Saenz de Valluerca,Mujer,Psikologia,false
-Andrea Hierro Pascual,Mujer,Psikologia,true
-Olatz Hidalgo Jimenez,Mujer,Psikologia,true
-Lidia Casteran Pinilla,Mujer,Psikologia,true
-Amaia Estebanez Goitia,Mujer,Psikologia,true
-Bingen Urbieta Aldalur,Hombre,Psikologia,true
-Maider Bastardo Arizpeleta,Mujer,Psikologia,true
-Aritz Etxaniz Orbegozo,Hombre,Psikologia,true
-Eneko Urquiza Zorriqueta,Hombre,Psikologia,true
-Jennifer Alvarez Ostolaza,Mujer,Psikologia,true
-Amaia Olano Martinez,Mujer,Psikologia,true
-Sarah Boyle Garayoa,Mujer,Psikologia,true
-Veselin Solenkov Radoslavov,Hombre,Informatika,false
-Manex Darceles Garai,Hombre,Informatika,true
-Manex Lizaso Alcibar,Hombre,Informatika,true
-Eritz Losa Escolano,Hombre,Informatika,true
-Inigo Perez Diez,Hombre,Informatika,true
-Manuel Ruiz Garcia,Hombre,Informatika,true
-Jeray Garcia Olazar,Hombre,Informatika,true
-Egoitz Herrera Pineiro,Hombre,Informatika,true
-Maddi Marko Rada,Mujer,Antropologia,true
-Olatz Lasa Zabaleta,Mujer,Antropologia,true
-Ainhoa Liebana Aparicio,Mujer,Antropologia,true
-Mireya Gongora Dominguez,Mujer,Kimika,false
+# FORMATO DEL FICHERO
+#<nombe y apellidos>,<sexo(Hombre/Mujer)>,<grado(Tiene que estar añadido en la lista de Centros)>,<euskera(true/false)>
+#EJEMPLO:
+Jon Arzelus Rodiguez,Informatika,Hombre,true
+#La línea de arriba representa a un estudiante de Informática (se supone que el centro está añadido y tiene el nombre 'Informatika' en el programa) que sabe euskera y que es hombre.
+#
+#Las líneas que comienzan con # son comentarios (por lo tanto, 'Jon Arzelus Rodiguez' será añadido a la lista de alumnos si no se elimina)
+#
+#CENTROS DISPONIBLES: 
+#	Psikologia
+#	Ingeniaritza
+#	Antropologia
+#	Arkitektura
+#	Informatika
+#	Magisteritza
+#	Gizarte Hezkuntza
+#	Kimika
+#	ADE
+#	Pedagogia

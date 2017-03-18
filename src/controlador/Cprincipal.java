@@ -102,13 +102,17 @@ public class Cprincipal {
 	}
 
 	/**Añadir alumnos a la DB*/
-	public static void addAlumnos(String nombre, String centro, boolean euskera, String genero) {
+	public static void addAlumnos(String nombre, String centro, String genero, boolean euskera) {
 		Statement stmt = null;
 		try {
 			stmt = DBconexion.createStatement();
-			String sql = "INSERT INTO ALUMNOS(NOMBRE,CENTRO,EUSKERA,GENERO) " + "VALUES ('" + nombre + "','" + centro + "','"
+			if(Cprincipal.getCentros().toString().contains(centro)) { //TODO mirar si existe el centro
+				String sql = "INSERT INTO ALUMNOS(NOMBRE,CENTRO,EUSKERA,GENERO) " + "VALUES ('" + nombre + "','" + centro + "','"
 					+ Boolean.toString(euskera) + "','"+genero+"');";
 			stmt.executeUpdate(sql);
+			} else {
+				System.err.println("El centro especificado ("+centro+") no existe");
+			}
 			stmt.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());

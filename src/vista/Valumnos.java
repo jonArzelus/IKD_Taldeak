@@ -125,7 +125,7 @@ public class Valumnos {
 		btnAnadir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(txtnombre.getText().length()>0 && combocentros.getSelectedIndex()>-1) {
-					Cprincipal.addAlumnos(txtnombre.getText(), combocentros.getSelectedItem().toString(), chkeuskera.isSelected(),combogenero.getSelectedItem().toString());
+					Cprincipal.addAlumnos(txtnombre.getText(), combocentros.getSelectedItem().toString(), combogenero.getSelectedItem().toString(),chkeuskera.isSelected());
 					actualizar();
 				}
 			}

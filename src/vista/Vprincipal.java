@@ -16,7 +16,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
@@ -31,6 +34,7 @@ public class Vprincipal {
 	private JTextField txtpreferencias;
 	private JTextField txtgrado;
 	private JTextField txtgenero;
+	private final File f = new File(Vprincipal.class.getProtectionDomain().getCodeSource().getLocation().getPath());
 
 	/**
 	 * Launch the application. Rutina principal para lanzar la interfaz y comenzar a usar todo
@@ -70,7 +74,7 @@ public class Vprincipal {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 535, 324);
+		frame.setBounds(100, 100, 605, 324);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -116,7 +120,7 @@ public class Vprincipal {
 				frame.dispose();
 			}
 		});
-		btnSalir.setBounds(419, 250, 89, 23);
+		btnSalir.setBounds(490, 251, 89, 23);
 		frame.getContentPane().add(btnSalir);
 		
 		JLabel lblAlumnos = new JLabel("Alumnos:");
@@ -152,15 +156,16 @@ public class Vprincipal {
 					if(!txtpreferencias.getText().equals("")&&!txtgrado.getText().equals("")&&!txtgenero.getText().equals("")&&(Double.valueOf(txtpreferencias.getText())+Double.valueOf(txtgenero.getText())+Double.valueOf(txtgrado.getText()))==100)
 						Mprincipal.realizarReparto(Cprincipal.getAlumnos(), Cprincipal.getCentros(), Cprincipal.getNecesidad(), Double.valueOf(txtpreferencias.getText()), Double.valueOf(txtgenero.getText()), Double.valueOf(txtgrado.getText()));
 				} catch (NumberFormatException e) {
-					Verror a = new Verror("Para realizar el reparto la suma de los tres campos tiene que dar 100.0 y sólo se admiten carácteres numéricos no negativos");
+					Verror a = new Verror("Para realizar el reparto la suma de los tres campos tiene que dar 100.0 y sólo se admiten carácteres numéricos no negativos","error");
 				}
 			}
 		});
-		btnreparto.setBounds(362, 132, 146, 23);
+		btnreparto.setBounds(433, 133, 146, 23);
 		frame.getContentPane().add(btnreparto);
 		
 		txtarchivo = new JTextField();
-		txtarchivo.setBounds(180, 217, 196, 20);
+		txtarchivo.setText("Ikasleak.txt");
+		txtarchivo.setBounds(180, 217, 300, 20);
 		frame.getContentPane().add(txtarchivo);
 		txtarchivo.setColumns(10);
 		
@@ -168,9 +173,16 @@ public class Vprincipal {
 		btnarchivo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(!txtarchivo.getText().isEmpty()) {
-					Vprincipal.añadirAlumnosTXT(txtarchivo.getText());
-					Vprincipal a = new Vprincipal(Cprincipal.getAlumnos(), Cprincipal.getCentros());
-					frame.dispose();
+					boolean az;
+					az = Vprincipal.añadirAlumnosTXT(txtarchivo.getText());
+					Verror a;
+					Vprincipal x;
+					if(!az) //si no ha terminado bien el proceso enseña un frame de error
+						 a = new Verror("No se ha encontrado el fichero '"+txtarchivo.getText()+"' en el directorio '"+f.getAbsolutePath()+"' o bien ha habido algún error al leerlo. Hay que respetar el formato de la plantilla","error");
+					else {
+						x = new Vprincipal(Cprincipal.getAlumnos(), Cprincipal.getCentros());
+						frame.dispose();
+					}
 				}
 			}
 		});
@@ -182,43 +194,75 @@ public class Vprincipal {
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblGrado = new JLabel("G\u00E9nero");
-		lblGrado.setBounds(419, 100, 89, 14);
+		lblGrado.setBounds(490, 101, 89, 14);
 		frame.getContentPane().add(lblGrado);
 		
 		JLabel lblPreferencias = new JLabel("Preferencias");
-		lblPreferencias.setBounds(419, 50, 89, 14);
+		lblPreferencias.setBounds(490, 51, 89, 14);
 		frame.getContentPane().add(lblPreferencias);
 		
 		JLabel label_1 = new JLabel("Grado");
-		label_1.setBounds(419, 75, 89, 14);
+		label_1.setBounds(490, 76, 89, 14);
 		frame.getContentPane().add(label_1);
 		
 		txtpreferencias = new JTextField();
-		txtpreferencias.setBounds(362, 47, 47, 20);
+		txtpreferencias.setText("100");
+		txtpreferencias.setBounds(433, 48, 47, 20);
 		frame.getContentPane().add(txtpreferencias);
 		txtpreferencias.setColumns(10);
 		
 		txtgrado = new JTextField();
+		txtgrado.setText("0");
 		txtgrado.setColumns(10);
-		txtgrado.setBounds(362, 72, 47, 20);
+		txtgrado.setBounds(433, 73, 47, 20);
 		frame.getContentPane().add(txtgrado);
 		
 		txtgenero = new JTextField();
+		txtgenero.setText("0");
 		txtgenero.setColumns(10);
-		txtgenero.setBounds(362, 97, 47, 20);
+		txtgenero.setBounds(433, 98, 47, 20);
 		frame.getContentPane().add(txtgenero);
+		
+		JButton btnplantilla = new JButton("Crear Plantilla");
+		btnplantilla.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try{
+				    PrintWriter writer = new PrintWriter("ikasleak.txt", "UTF-8"); //para evitar problemas de igualdad, ikasleak.txt
+				    writer.println("# FORMATO DEL FICHERO");
+				    writer.println("#<nombe y apellidos>,<sexo(Hombre/Mujer)>,<centro(de la lista de centros disponibles)>,<euskera(true/false)>");
+				    writer.println("#EJEMPLO:");
+				    writer.println("Jon Arzelus Rodiguez,Informatika,Hombre,true");
+				    writer.println("#La línea de arriba representa a un estudiante de Informática (se supone que el centro está añadido y tiene el nombre 'Informatika' en el programa) que sabe euskera y que es hombre.");
+				    writer.println("#");
+				    writer.println("#Las líneas que comienzan con # son comentarios (por lo tanto, 'Jon Arzelus Rodiguez' será añadido a la lista de alumnos si no se elimina)");
+				    writer.println("#");
+				    writer.println("#CENTROS DISPONIBLES: ");
+				    for(Centro c:Cprincipal.getCentros())
+				    	writer.println("#	"+c.getNombre());
+				    writer.close();
+				    Verror a = new Verror("Se ha creado el archivo 'Ikasleak.txt' en el directorio del ejecutable, '"+f.getAbsolutePath()+"' y en él está el esquema general del archivo y un input de ejemplo. Se recomienda usar un editor con reemplazo automático para facilitar la tarea.", "info");
+				} catch (IOException e) {
+				   Verror x = new Verror("Error desconocido (putada) al crear el archivo de plantilla","error"); //programando como es debido
+				}
+			}
+		});
+		btnplantilla.setBounds(312, 250, 168, 23);
+		frame.getContentPane().add(btnplantilla);
 	}
 	
-	public static void añadirAlumnosTXT(String nombre) {
+	public static boolean añadirAlumnosTXT(String nombre) {
 		String fila;
 		String[] partes;
 		try (BufferedReader br = new BufferedReader(new FileReader(nombre))) {
 		    while ((fila = br.readLine()) != null) {
 		    	partes=fila.split(",");
-				Cprincipal.addAlumnos(partes[0], partes[2], Boolean.valueOf(partes[3]), partes[1]);
+		    	if(!(partes[0].charAt(0)=='#')) //si es una linea con comentarios no lo lee
+		    		Cprincipal.addAlumnos(partes[0], partes[1], partes[2], Boolean.valueOf(partes[3]));
 		    }
+		    return true;
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+			return false;
 		}
 	}
 }
